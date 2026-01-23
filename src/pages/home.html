@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Collection - Home</title>
+    <link rel="stylesheet" href="../output.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .curved-bg {
+        border-radius: 0 0 50% 50% / 0 0 15% 15%;
+      }
+    </style>
+  </head>
+  <body class="bg-[#FFFDF5] text-gray-800">
+    <div id="navbar"></div>
+
+    <section
+      class="relative min-h-[600px] w-full flex items-center overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          src="../images/Frame 20 (3).png"
+          alt="Food Bowl Background"
+          class="w-full h-full object-cover object-right md:object-center"
+        />
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-16">
+        <div class="max-w-xl text-white">
+          <h1
+            class="text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg"
+          >
+            Delicious Food <br />
+            Collection!
+          </h1>
+
+          <p
+            class="text-lg md:text-xl opacity-95 mb-10 leading-relaxed drop-shadow-md"
+          >
+            Discover exciting flavors, affordable prices, and a memorable
+            experience we're proud to offer our customers.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="bg-white text-yellow-500 px-8 py-3 rounded-xl font-bold shadow-xl flex items-center gap-2 hover:scale-105 transition-transform"
+            >
+              Order Food
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </button>
+
+            <button
+              class="border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white/20 transition backdrop-blur-sm"
+            >
+              View Menu
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FFFBEB] pt-24 pb-20 px-6 relative overflow-hidden">
+      <img
+        src="../images/Group 15.png"
+        class="absolute left-10 top-1/4 w-24 md:w-32 rotate-[-15deg] z-10"
+        alt="Floating Burger"
+      />
+      <img
+        src="../images/Group 23.png"
+        class="absolute right-10 bottom-10 w-28 md:w-40 rotate-[20deg] z-10"
+        alt="Floating Pizza"
+      />
+      <div class="absolute inset-0 opacity-20 pointer-events-none">
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 1000 1000"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,200 Q250,100 500,200 T1000,200"
+            fill="none"
+            stroke="#EAB308"
+            stroke-width="2"
+          />
+          <path
+            d="M0,800 Q250,700 500,800 T1000,800"
+            fill="none"
+            stroke="#EAB308"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+
+      <div class="max-w-4xl mx-auto text-center relative z-20">
+        <h2
+          class="text-4xl md:text-6xl font-black text-yellow-500 mb-4 leading-tight"
+        >
+          Great food for <br />
+          everyone
+        </h2>
+        <p class="text-gray-500 max-w-sm mx-auto mb-16">
+          For 10+ years, we've delivered new taste experiences right to your
+          door.
+        </p>
+
+        <div
+          class="bg-white rounded-2xl shadow-2xl py-6 px-10 flex flex-col md:flex-row items-center justify-between gap-6 border border-gray-50"
+        >
+          <div class="flex items-center gap-4">
+            <div class="bg-gray-50 p-3 rounded-xl">
+              <i class="fas fa-tag text-yellow-500 text-xl"></i>
+            </div>
+            <div class="flex flex-col text-left">
+              <span
+                class="text-sm font-bold text-yellow-600 uppercase leading-none"
+                >Daily</span
+              >
+              <span class="text-sm font-bold text-yellow-600 uppercase"
+                >Discounts</span
+              >
+            </div>
+          </div>
+
+          <div class="hidden md:block w-px h-10 bg-gray-200"></div>
+
+          <div class="flex items-center gap-4">
+            <div class="bg-gray-50 p-3 rounded-xl">
+              <i class="fas fa-map-marker-alt text-yellow-500 text-xl"></i>
+            </div>
+            <div class="flex flex-col text-left">
+              <span
+                class="text-sm font-bold text-yellow-600 uppercase leading-none"
+                >Visit</span
+              >
+              <span class="text-sm font-bold text-yellow-600 uppercase"
+                >us</span
+              >
+            </div>
+          </div>
+
+          <div class="hidden md:block w-px h-10 bg-gray-200"></div>
+
+          <div class="flex items-center gap-4">
+            <div class="bg-gray-50 p-3 rounded-xl">
+              <i class="fas fa-clock text-yellow-500 text-xl"></i>
+            </div>
+            <div class="flex flex-col text-left">
+              <span
+                class="text-sm font-bold text-yellow-600 uppercase leading-none"
+                >Visit</span
+              >
+              <span class="text-sm font-bold text-yellow-600 uppercase"
+                >us</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-yellow-500 mb-4">Popular menu</h2>
+      <p class="text-gray-500 mb-20 max-w-2xl mx-auto">
+        Discover our exciting flavors, affordable prices, and a memorable
+        experience we're proud to offer our customers.
+      </p>
+
+      <div
+        class="bg-yellow-400 rounded-[3rem] p-12 grid grid-cols-1 md:grid-cols-3 gap-12 mt-10"
+      >
+        <div class="flex flex-col items-center -mt-24">
+          <img
+            src="../images/image 10 (2).png"
+            class="w-44 h-44 rounded-full mb-6 object-cover"
+          />
+          <h3 class="text-white font-bold text-xl mb-3">Fresh Power Bowl</h3>
+          <p class="text-white/80 text-sm px-4">
+            A vibrant and delicious mix of vegetables, fruits, and grains for a
+            healthy meal.
+          </p>
+        </div>
+        <div class="flex flex-col items-center -mt-24">
+          <img
+            src="../images/image 10 (1).png"
+            class="w-44 h-44 rounded-full mb-6 object-cover"
+          />
+          <h3 class="text-white font-bold text-xl mb-3">
+            Spicy Stir-Fried Noodles
+          </h3>
+          <p class="text-white/80 text-sm px-4">
+            Savory noodles stir-fried with vegetables and a spicy kick of
+            flavor.
+          </p>
+        </div>
+        <div class="flex flex-col items-center -mt-24">
+          <img
+            src="../images/image 10.png"
+            class="w-44 h-44 rounded-full mb-6 object-cover"
+          />
+          <h3 class="text-white font-bold text-xl mb-3">Green Vitality Bowl</h3>
+          <p class="text-white/80 text-sm px-4">
+            A balanced bowl with fresh greens, nuts, and nutritious toppings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- best offer for you -->
+
+    <section class="max-w-7xl mx-auto px-6 py-20">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-yellow-500 mb-3">
+          Best Offers For You
+        </h2>
+        <div class="w-40 h-0.5 bg-gray-300 mx-auto mb-6"></div>
+        <p class="text-gray-500 max-w-xl mx-auto">
+          Enjoy your favorite dishes at special prices today. Don't miss today's
+          food deals!
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 items-end"
+      >
+        <div class="flex flex-col justify-between h-full">
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-yellow-500 leading-tight mb-2">
+              New Dishes <br />
+              For You!
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Order now and get <br />
+              discount 50%
+            </p>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-md">
+            <img
+              src="../images/image 4.png"
+              alt="New Dish"
+              class="w-full h-44 object-cover"
+            />
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="rounded-2xl overflow-hidden shadow-sm">
+            <img
+              src="../images/Geheimnisse der Natur - Blütenpollen ernährungs-trend 2025 1.png"
+              alt="Dishes"
+              class="w-full h-44 object-cover"
+            />
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-sm">
+            <img
+              src="../images/15 Easy Game Day Snack Recipe Ideas _ Mummy Time 2.png"
+              alt="Snack"
+              class="w-full h-36 object-cover"
+            />
+          </div>
+        </div>
+
+        <div class="h-full">
+          <img
+            src="../images/Vegan Potstickers With Dipping Sauce 1.png"
+            alt="Gyoza"
+            class="w-full h-[340px] object-cover rounded-2xl shadow-md"
+          />
+        </div>
+
+        <div class="h-full">
+          <img
+            src="../images/Lentil Bolognese 1.png"
+            alt="Pasta"
+            class="w-full h-[340px] object-cover rounded-2xl shadow-md"
+          />
+        </div>
+
+        <div class="h-full">
+          <img
+            src="../images/Penne all’Arrabbiata — One Pot Pia 1.png"
+            alt="Penne"
+            class="w-full h-[340px] object-cover rounded-2xl shadow-md"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold text-yellow-500 text-center mb-4">
+        Explore the menu
+      </h2>
+      <p class="text-gray-500 text-center mb-12">
+        Discover a menu crafted with fresh ingredients, rich flavors, and
+        passion in every bite.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div
+          class="bg-white rounded-2xl p-4 shadow-sm border border-gray-50 group hover:shadow-md transition"
+        >
+          <img
+            src="../images/image 16 (3).png"
+            class="w-full h-48 object-cover rounded-xl mb-4 group-hover:scale-105 transition duration-300"
+          />
+          <div class="flex text-yellow-400 text-xs mb-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <h4 class="font-bold text-gray-800 mb-1">Cambodian beef noodle</h4>
+          <p class="text-gray-500 text-xs leading-relaxed">
+            Rich broth, tender beef, and local spices for a classic taste.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl p-4 shadow-sm border border-gray-50 group hover:shadow-md transition"
+        >
+          <img
+            src="../images/image 16 (2).png"
+            class="w-full h-48 object-cover rounded-xl mb-4 group-hover:scale-105 transition duration-300"
+          />
+          <div class="flex text-yellow-400 text-xs mb-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <h4 class="font-bold text-gray-800 mb-1">Steamed Fish Amok</h4>
+          <p class="text-gray-500 text-xs leading-relaxed">
+            Local fish steamed in curry coconut milk for a creamy flavor.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl p-4 shadow-sm border border-gray-50 group hover:shadow-md transition"
+        >
+          <img
+            src="../images/image 16 (1).png"
+            class="w-full h-48 object-cover rounded-xl mb-4 group-hover:scale-105 transition duration-300"
+          />
+          <div class="flex text-yellow-400 text-xs mb-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <h4 class="font-bold text-gray-800 mb-1">Chicken Momos</h4>
+          <p class="text-gray-500 text-xs leading-relaxed">
+            Delicious steamed dumplings with savory chicken filling.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl p-4 shadow-sm border border-gray-50 group hover:shadow-md transition"
+        >
+          <img
+            src="../images/image 16.png"
+            class="w-full h-48 object-cover rounded-xl mb-4 group-hover:scale-105 transition duration-300"
+          />
+          <div class="flex text-yellow-400 text-xs mb-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <h4 class="font-bold text-gray-800 mb-1">Khmer Salad</h4>
+          <p class="text-gray-500 text-xs leading-relaxed">
+            A fresh salad with local herbs and crunchy vegetables.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <button
+          class="bg-yellow-400 text-white px-10 py-3 rounded-lg font-bold shadow-lg hover:bg-yellow-500"
+        >
+          Explore The Full Menu
+        </button>
+      </div>
+    </section>
+    
+    <div id="footer"></div>
+    <script src="../include.js"></script>
+  </body>
+</html>
