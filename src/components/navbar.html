@@ -1,20 +1,28 @@
 <header class="bg-white dark:bg-gray-900 sticky top-0 w-full z-50">
   <nav class="container mx-auto px-4 md:px-8">
     <div class="flex justify-between items-center h-16 md:h-20">
-      <a href="/">
+      
+      <!-- Logo -->
+      <a data-route="/" class="nav-link">
         <div class="text-3xl md:text-4xl drop-shadow-md transition-transform duration-300">
           <img src="/assets/foodora.PNG" alt="logo foodora" class="w-fit h-[65px] object-contain"/>
         </div>
       </a>
+
+      <!-- Desktop Links -->
       <div class="hidden md:flex items-center gap-10">
-        <a href="#" class="text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">Home</a>
-        <a href="#" class="text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">About Us</a>
-        <a href="#" class="text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">Menu</a>
+        <a data-route="/" class="nav-link text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">Home</a>
+        <a data-route="/src/pages/aboutpage.html" class="nav-link text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">About Us</a>
+        <a data-route="/src/pages/menupage.html" class="nav-link text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">Menu</a>
       </div>
+
+      <!-- Desktop Buttons -->
       <div class="hidden md:flex items-center gap-3 sm:gap-4">
-        <a href="#" class="px-3 py-1 text-white bg-[#FFCC00] text-[18px] rounded-[10px] hover:bg-yellow-400">Login</a>
-        <a href="#" class="px-3 py-1 text-primary bg-white dark:bg-gray-800 text-[18px] rounded-[10px] border-2 border-[#FFCC00] hover:bg-yellow-50 dark:hover:bg-gray-700">Register</a>
+        <a data-route="/src/pages/login.html" class="nav-link px-3 py-1 text-white bg-[#FFCC00] text-[18px] rounded-[10px] hover:bg-yellow-400">Login</a>
+        <a data-route="/src/pages/register.html" class="nav-link px-3 py-1 text-primary bg-white dark:bg-gray-800 text-[18px] rounded-[10px] border-2 border-[#FFCC00] hover:bg-yellow-50 dark:hover:bg-gray-700">Register</a>
       </div>
+
+      <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="md:hidden text-primary dark:text-white focus:outline-none">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -22,14 +30,16 @@
       </button>
     </div>
   </nav>
+
+  <!-- Mobile Menu -->
   <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
     <div class="flex flex-col gap-4 p-4">
-      <a href="#" class="text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">Home</a>
-      <a href="#" class="text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">About Us</a>
-      <a href="#" class="text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">Menu</a>
+      <a data-route="/" class="nav-link text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">Home</a>
+      <a data-route="/src/pages/aboutpage.html" class="nav-link text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">About Us</a>
+      <a data-route="/src/pages/menupage.html" class="nav-link text-[18px] text-primary font-medium hover:text-blue-300 dark:hover:text-blue-400">Menu</a>
       <div class="flex flex-col gap-2 mt-2">
-        <a href="#" class="px-3 py-2 text-white bg-[#FFCC00] text-[18px] rounded-[10px] text-center hover:bg-yellow-400">Login</a>
-        <a href="#" class="px-3 py-2 text-primary bg-white dark:bg-gray-800 text-[18px] rounded-[10px] border-2 border-[#FFCC00] text-center hover:bg-yellow-50 dark:hover:bg-gray-700">Register</a>
+        <a data-route="/src/pages/login.html" class="nav-link px-3 py-2 text-white bg-[#FFCC00] text-[18px] rounded-[10px] text-center hover:bg-yellow-400">Login</a>
+        <a data-route="/src/pages/register.html" class="nav-link px-3 py-2 text-primary bg-white dark:bg-gray-800 text-[18px] rounded-[10px] border-2 border-[#FFCC00] text-center hover:bg-yellow-50 dark:hover:bg-gray-700">Register</a>
       </div>
     </div>
   </div>
