@@ -4,21 +4,256 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- style css -->
     <link rel="stylesheet" href="./src/output.css" />
   </head>
 
-  <body class="">
+  <body class="bg-background">
     <!-- use id navbar for import navbar component -->
     <!-- don't remove id navbar -->
     <div id="navbar"></div>
+    <main>
+      <section class="relative min-h-[600px] h-[90vh] w-full flex items-center">
+        <div data-aos="fade" data-aos-delay="200" class="absolute inset-0 z-0">
+          <img
+            src="src/images/Frame 20 (3).png"
+            alt="Food Bowl Background"
+            class="w-full h-[95vh] object-cover object-right md:object-center"
+          />
+        </div>
 
-    <div class="h-screen"></div>
+        <div class="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-6">
+          <div class="max-w-xl text-white">
+            <h1
+              data-aos="fade-down"
+              data-aos-delay="300"
+              class="text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg"
+            >
+              Delicious Food <br />
+              Collection!
+            </h1>
+
+            <p
+              data-aos="fade-right"
+              data-aos-delay="350"
+              class="text-lg md:text-xl opacity-95 mb-10 leading-relaxed drop-shadow-md"
+            >
+              Discover exciting flavors, affordable prices, and a memorable
+              experience we're proud to offer our customers.
+            </p>
+
+            <div class="flex mt-8 flex-wrap gap-4">
+              <button
+                data-aos-delay="300"
+                data-aos="fade-right"
+                class="bg-white text-yellow-500 px-8 py-3 rounded-xl font-bold shadow-xl flex items-center gap-2 hover:scale-105 transition-transform"
+              >
+                Order Food
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </button>
+
+              <a
+                href="#menu"
+                data-aos-delay="350"
+                data-aos="fade-left"
+                class="border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white/20 transition backdrop-blur-sm"
+              >
+                View Menu
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu" class="w-full mt-5 h-[95vh] overflow-hidden">
+        <div class="w-full h-[90vh] flex items-center justify-center relative">
+          <div
+            class="w-full h-full max-w-screen relative rounded-tl-3xl rounded-tr-3xl"
+          >
+            <!-- Left Background Line -->
+            <div class="absolute -left-[20%] top-8 w-[43%] h-[50vh]">
+              <img
+                data-aos="fade-right"
+                data-aos-delay="600"
+                src="/Image/index/vector-40.svg"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+            <!-- Right Background Image -->
+            <div class="absolute  -right-[20%] max-md:min-h-[600px] top-5 w-[43%]">
+              <img
+                data-aos="fade-left"
+                data-aos-delay="600"
+                src="/Image/index/vector-60.svg"
+                class="w-full h-auto object-cover"
+              />
+              <!-- <img src="/Image/index/vector-60.svg" class="w-full h-auto" /> -->
+            </div>
+            <!-- Center Content -->
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-center gap-10 px-6"
+            >
+              <h1
+                data-aos="zoom-in"
+                data-aos-delay="1000"
+                class="text-primary max-md:text-4xl text-[70px] font-bold leading-tight"
+              >
+                Great food for <br />everyone
+              </h1>
+              <p
+                data-aos="zoom-in"
+                data-aos-delay="1200"
+                class="text-gray-500 text-xl max-w-md"
+              >
+                For 10+ years, we’ve delivered new taste experiences right to
+                your door.
+              </p>
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="1250"
+                class="bg-white rounded-[32px] shadow-md shadow-gray-400/10 py-4 sm:py-5 md:py-6 px-6 sm:px-8 md:px-10 flex flex-col md:flex-row gap-4 sm:gap-5 md:gap-6 border border-gray-50 scale-90 sm:scale-95 md:scale-100 transition-transform duration-300"
+              >
+                <!-- Daily Discounts -->
+                <div class="flex items-center gap-3 sm:gap-4 md:gap-4">
+                  <div>
+                    <img
+                      class="bg-gray-50 w-[50px] sm:w-[55px] md:w-[60px] rounded-xl"
+                      src="/Image/index/discount.png"
+                      alt="Discount"
+                    />
+                  </div>
+                  <div class="flex flex-col text-left">
+                    <p
+                      class="text-lg sm:text-xl md:text-xl font-bold bg-gradient-to-r from-[#FF8D28] to-primary bg-clip-text text-transparent"
+                    >
+                      Daily <br />
+                      Discounts
+                    </p>
+                  </div>
+                </div>
+
+                <div class="hidden md:block w-px h-10 bg-gray-200"></div>
+
+                <!-- Visit Us -->
+                <div class="flex items-center gap-3 sm:gap-4 md:gap-4">
+                  <div>
+                    <img
+                      class="bg-gray-50 w-[50px] sm:w-[55px] md:w-[60px] rounded-xl"
+                      src="/Image/index/location.png"
+                      alt="Location"
+                    />
+                  </div>
+                  <div class="flex flex-col text-left">
+                    <p
+                      class="text-lg sm:text-xl md:text-xl font-bold bg-gradient-to-r from-[#FF8D28] to-primary bg-clip-text text-transparent"
+                    >
+                      Visit <br />
+                      Us
+                    </p>
+                  </div>
+                </div>
+
+                <div class="hidden md:block w-px h-10 bg-gray-200"></div>
+
+                <!-- Opening Hours -->
+                <div class="flex items-center gap-3 sm:gap-4 md:gap-4">
+                  <div>
+                    <img
+                      class="bg-gray-50 w-[50px] sm:w-[55px] md:w-[60px] rounded-xl"
+                      src="/Image/index/time.png"
+                      alt="Time"
+                    />
+                  </div>
+                  <div class="flex flex-col text-left">
+                    <p
+                      class="text-lg sm:text-xl md:text-xl font-bold bg-gradient-to-r from-[#FF8D28] to-primary bg-clip-text text-transparent"
+                    >
+                      Opening <br />
+                      Hours
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="750"
+              src="Image/index/MINT.png"
+              class="absolute ] top-[5%] left-[25%] w-[3%] rounded-lg"
+            />
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="700"
+              src="Image/index/burger.png"
+              class="absolute w-[200px] left-[2%] top-[32%] rounded-lg"
+            />
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              src="Image/index/TOMATO.png"
+              class="absolute bottom-[5%] left-[20%] w-[3%] rounded-lg"
+            />
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="800"
+              src="Image/index/TOMATO.png"
+              class="absolute top-[48%] right-[4%] w-[3%] rounded-lg"
+            />
+
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="650"
+              src="Image/index/pizza.png"
+              class="absolute w-[200px] right-[8%] bottom-[1%] rounded-lg"
+            />
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="750"
+              src="Image/index/dumpling.png"
+              class="absolute w-[185px] rotate-[25deg] right-[8%] top-3 rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- use id footer for import footer component -->
     <!-- don't remove id footer -->
-    <div id="footer"></div>
+    <div id="footer" class="mt-8"></div>
     <script src="./src/include.js"></script>
   </body>
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true, // animation happens only once
+      duration: 800, // animation speed
+      easing: "ease-out-cubic",
+    });
+  </script>
+  <!-- <script>
+    AOS.init({
+      Once: true,
+      duration: 850, // animation speed
+      easing: "ease-out-cubic",
+    });
+  </script> -->
+
+  <!-- font awsome -->
   <script
     src="https://kit.fontawesome.com/5ce14b4205.js"
     crossorigin="anonymous"
