@@ -4,36 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Menu Landing Page</title>
-    
-    <link rel="stylesheet" href="../output.css">
+
+    <link rel="stylesheet" href="../output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
       body {
         font-family: "Poppins", sans-serif;
         scroll-behavior: smooth;
       }
-      .curved-bg {
-        border-radius: 0 0 50% 50% / 0 0 15% 15%;
-      }
     </style>
   </head>
+
   <body class="bg-white text-gray-800 antialiased">
     <div id="navbar"></div>
 
-    <section
-      class="relative w-full min-h-[600px] flex items-center bg-[#FFFDF2] overflow-hidden"
-    >
+    <!-- HERO -->
+    <section class="bg-[#FFFDF2] overflow-hidden">
       <div
-        class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center relative"
+        class="max-w-7xl mx-auto px-6 py-14 flex flex-col md:flex-row items-center gap-10"
       >
-        <div class="w-full md:w-1/2 z-20 py-12 md:pr-10 text-left">
+        <!-- TEXT -->
+        <div class="w-full md:w-1/2">
           <h1
-            class="text-5xl md:text-7xl font-extrabold text-[#FDC92D] leading-tight mb-6"
+            class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-[#FDC92D] leading-tight mb-6"
           >
             Limited Time <br />
             Special Offer
@@ -43,88 +43,110 @@
             for a short time. Treat yourself today!
           </p>
           <button
-            class="bg-[#FDC92D] hover:bg-[#eab308] text-white px-10 py-3 rounded-xl font-bold text-lg shadow-lg transition-transform hover:scale-105"
+            class="bg-[#FDC92D] hover:bg-[#eab308] text-white px-10 py-3 rounded-xl font-bold text-lg shadow-lg transition hover:scale-105"
           >
             See Menu
           </button>
         </div>
-        <div
-          class="w-full md:w-1/2 flex justify-end items-center mt-10 md:mt-0"
-        >
-          <div class="relative w-full flex justify-end">
-            <img
-              src="../images/Group 64.png"
-              alt="Burger"
-              class="w-full h-auto max-w-[650px] lg:max-w-[800px] md:scale-125 md:translate-x-12 lg:translate-x-20"
-            />
-          </div>
+
+        <!-- IMAGE (FIXED FOR MOBILE) -->
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img
+            src="../images/Group 64.png"
+            alt="Burger"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain lg:scale-110 xl:scale-125 lg:translate-x-12 xl:translate-x-20"
+          />
         </div>
       </div>
     </section>
 
-    <section class="container mx-auto px-6 md:px-12 py-10 text-center">
-  <h2 class="text-4xl font-bold text-yellow-500 mb-6">Daily Foods</h2>
-  <p class="text-gray-500 mb-8 max-w-2xl mx-auto">
-    Discover a menu crafted with fresh ingredients,<br class="hidden md:block"> 
-    rich flavors, and passion in every bite.
-  </p>
+    <!-- DAILY FOODS -->
+    <section class="max-w-7xl mx-auto px-6 py-14 text-center">
+      <h2 class="text-4xl font-bold text-yellow-500 mb-6">Daily Foods</h2>
+      <p class="text-gray-500 mb-10 max-w-2xl mx-auto">
+        Discover a menu crafted with fresh ingredients, rich flavors, and
+        passion in every bite.
+      </p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-    
-    <div class="h-64 overflow-hidden rounded-xl">
-      <img src="../images/image 16 (5).png" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-    </div>
+      <!-- GRID -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 [grid-auto-rows:160px] sm:[grid-auto-rows:208px] md:[grid-auto-rows:256px]"
+      >
+        <!-- Normal image -->
+        <div class="overflow-hidden rounded-xl">
+          <img
+            src="../images/image 16 (5).png"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
 
-    <div class="h-64 overflow-hidden rounded-xl">
-      <img src="../images/image 19.png" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-    </div>
+        <!-- Normal image -->
+        <div class="overflow-hidden rounded-xl">
+          <img
+            src="../images/image 19.png"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
 
-    <div class="h-64 lg:h-full lg:row-span-2 overflow-hidden rounded-xl">
-      <img src="../images/image 16 (4).png" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-    </div>
+        <!-- Special image (spans 2 rows md+) -->
+        <div class="overflow-hidden rounded-xl md:row-span-2">
+          <img
+            src="../images/image 16 (4).png"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
 
-    <div class="h-64 overflow-hidden rounded-xl">
-      <img src="../images/image 16 (6).png" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-    </div>
+        <!-- Normal image -->
+        <div class="overflow-hidden rounded-xl">
+          <img
+            src="../images/image 16 (6).png"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
 
-    <div class="md:col-span-1 lg:col-span-2 h-64 overflow-hidden rounded-xl">
-      <img src="../images/image 18.png" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-    </div>
+        <!-- Wide image -->
+        <div class="overflow-hidden rounded-xl lg:col-span-2">
+          <img
+            src="../images/image 18.png"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
 
-    <div class="h-64 overflow-hidden rounded-xl">
-      <img src="../images/image 20.png" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-    </div>
-    
-  </div>
-</section>
+        <!-- Normal image -->
+        <div class="overflow-hidden rounded-xl">
+          <img
+            src="../images/image 20.png"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
+      </div>
+    </section>
 
+    <!-- ABOUT -->
     <section
-      class="container mx-auto px-6 md:px-20 py-8 md:py-12 flex flex-col md:flex-row items-center gap-8"
+      class="max-w-7xl mx-auto px-6 py-14 flex flex-col md:flex-row items-center gap-12"
     >
-      <div class="md:w-1/2 space-y-2">
-        <h2 class="text-5xl font-bold text-[#FDC92D] leading-tight mb-4">
+      <div class="md:w-1/2">
+        <h2 class="text-4xl md:text-5xl font-bold text-[#FDC92D] mb-4">
           Where Great <br />
           Taste Begins
         </h2>
-        <p class="text-gray-600 max-w-md">
-          Enjoy unique tastes, affordable pricing,<br> 
-          and an unforgettable experience<br> 
-          we proudly deliver to our customers.
+        <p class="text-gray-600 max-w-md mb-6">
+          Enjoy unique tastes, affordable pricing, and an unforgettable
+          experience we proudly deliver to our customers.
         </p>
-        <div class="pt-2">
-          <button
-            class="border-2 border-yellow-400 text-yellow-500 px-8 py-2 rounded-xl font-bold hover:bg-yellow-50 transition"
-          >
-            History
-          </button>
-        </div>
+        <button
+          class="border-2 border-yellow-400 text-yellow-500 px-8 py-2 rounded-xl font-bold hover:bg-yellow-50 transition"
+        >
+          History
+        </button>
       </div>
 
-      <div class="md:w-1/2 relative flex justify-center">
+      <div class="md:w-1/2 flex justify-center">
         <img
           src="../images/Group 79.png"
           alt="Food Plate"
-          class="w-full h-auto object-contain"
+          class="w-full max-w-xs sm:max-w-sm md:max-w-md object-contain"
         />
       </div>
     </section>
