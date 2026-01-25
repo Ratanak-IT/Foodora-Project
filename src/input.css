@@ -17,3 +17,33 @@ html {
     --color-background: #FFFDF1;
     --font-primary: 'Poppins', sans-serif;
 }
+
+@keyframes rotate-bg {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotate-img {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+.animate-rotate-bg {
+    animation: rotate-bg 1.5s ease-in-out forwards;
+    /* delay will be added via inline style or Tailwind */
+}
+
+.animate-rotate-img {
+    animation: rotate-img 1.5s ease-in-out forwards;
+    /* delay will be added via inline style or Tailwind */
+}

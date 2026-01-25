@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="shortcut icon" href="./img/home/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../output.css" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/5ce14b4205.js"
       crossorigin="anonymous"
@@ -29,36 +31,54 @@
           class="text-center lg:text-left space-y-8 md:space-y-10 lg:space-y-[40px] w-full lg:w-auto max-w-xl"
         >
           <h2
+            data-aos="fade-up"
+            data-aos-delay="0"
             class="text-5xl sm:text-6xl md:text-[5.5rem] lg:text-[66px] font-primary text-primary font-bold leading-tight md:leading-[1.2]"
           >
             Our Journey To <br class="hidden sm:block" />Great Taste
           </h2>
 
           <p
+            data-aos="fade-up"
+            data-aos-delay="150"
             class="text-xl sm:text-2xl md:text-[24px] font-light font-primary mx-auto lg:mx-0 max-w-[580px]"
           >
             At our core, we offer unique flavors, affordable prices, and an
             unforgettable experience we proudly deliver to every customer.
           </p>
-
-          <button
+          <a
+            href="#team"
+            data-aos="fade-left"
+            data-aos-delay="550"
+            class="border-2 border-white bg-primary text-white px-8 py-3 rounded-xl font-semibold  transition "
+          >
+            View Menu
+          </a>
+          <!--  <button
+            data-aos="fade-up"
+            data-aos-delay="300"
             class="mt-4 bg-white px-6 sm:px-8 py-4 sm:py-[18px] border-2 border-primary rounded-[12px] font-primary text-primary text-lg sm:text-[20px] font-semibold hover:bg-primary hover:text-white transition-colors"
           >
             Our members
-          </button>
+          </button> -->
         </div>
 
         <!-- Image / Right side -->
         <div
+          data-aos="fade-left"
           class="relative w-full max-w-[500px] aspect-square lg:w-[500px] lg:h-[500px] mt-10 lg:mt-0"
         >
           <!-- Background rotated -->
           <div
-            class="bg-[#FDF1BF] w-full h-full rounded-[20px] rotate-6 sm:rotate-8 absolute inset-0"
+            data-aos="fade-down"
+            data-aos-delay="300"
+            class="bg-[#FDF1BF] w-full rotate-[8deg] h-full rounded-[20px] absolute inset-0"
           ></div>
 
           <!-- Image NOT rotated -->
           <img
+            data-aos="fade-up"
+            data-aos-delay="400"
             src="/assets/heroabout.png"
             alt="Delicious beef dish with herbs, chili, cashews and sauce"
             class="w-full h-full object-cover rounded-[20px] absolute inset-0"
@@ -75,9 +95,14 @@
         class="container px-8 mx-auto flex justify-around gap-[200px] items-center"
       >
         <!-- Text Content -->
-        <div class="text-center lg:text-left space-y-[40px] relative">
+        <div
+          class="text-center lg:text-left space-y-[40px] relative"
+          data-aos="fade-right"
+        >
           <h2
             class="text-[70px] font-primary text-primary font-bold leading-[1.2] mt-10"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             Flavor in <br />Every Bite
           </h2>
@@ -86,90 +111,126 @@
             src="/assets/Vector8.png"
             alt="Delicious beef dish"
             class="object-contain rounded-[20px] absolute right-[-110px] top-8 w-[205px] h-[130px]"
+            data-aos="zoom-in"
+            data-aos-delay="200"
           />
-          <p class="text-[24px] font-light font-primary w-[504px]">
+          <p
+            class="text-[24px] font-light font-primary w-[504px]"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             Our passion lies in crafting flavorful food, offering reasonable
             prices, and delivering a dining experience guests will remember.
           </p>
         </div>
+
         <!-- Image Side -->
         <div class="relative w-[575px] h-[515px]">
           <img
             src="/assets/fruitoriginal.png"
             alt="Delicious beef dish"
             class="object-cover rounded-[20px] absolute right-0 top-10 w-[290px] h-[300px]"
+            data-aos="fade-up"
+            data-aos-delay="100"
           />
           <img
             src="/assets/fooderub.png"
             alt="Delicious beef dish"
             class="object-cover rounded-[20px] absolute right-80 bottom-3 w-[235px] h-[235px]"
+            data-aos="fade-left"
+            data-aos-delay="200"
           />
           <img
             src="/assets/foodegg.png"
             alt="Delicious beef dish"
             class="object-cover rounded-[20px] absolute right-80 top-30 w-[113px] h-[113px]"
+            data-aos="flip-up"
+            data-aos-delay="300"
           />
           <img
             src="/assets/treelef.png"
             alt="Delicious beef dish"
             class="object-cover rounded-[20px] absolute right-80 top-10 w-[34px] h-[40px]"
+            data-aos="fade-down"
+            data-aos-delay="400"
           />
           <img
             src="/assets/Frame.png"
             alt="Delicious beef dish"
             class="object-cover rounded-[20px] absolute right-55 bottom-18 w-[70px] h-[70px]"
+            data-aos="zoom-in"
+            data-aos-delay="500"
           />
           <img
             src="/assets/sberry.png"
             alt="Delicious beef dish"
             class="object-cover rounded-[20px] absolute right-35 bottom-18 w-[75px] h-[75px]"
+            data-aos="fade-up"
+            data-aos-delay="600"
           />
           <img
             src="/assets/Pepper.png"
             alt="Delicious beef dish"
             class="object-cover rounded-[20px] absolute right-0 bottom-20 w-[70px] h-[70px]"
+            data-aos="fade-left"
+            data-aos-delay="700"
           />
           <div class="relative overflow-visible">
             <img
               src="/assets/Lemon.png"
               alt="Delicious beef dish"
               class="absolute right-[25px] bottom-[-535px] w-[100px] h-[100px]"
+              data-aos="zoom-in"
+              data-aos-delay="800"
             />
           </div>
           <img
             src="/assets/onion.png"
             alt="Delicious beef dish"
-            class="object-cover rounded-[20px] absolute right-120 top-5 w-[140px] h-[140px]"
+            class="object-cover rounded-[20px] absolute right-110 top-5 w-[140px] h-[140px]"
+            data-aos="fade-up"
+            data-aos-delay="900"
           />
           <img
             src="/assets/redpepper.png"
             alt="Delicious beef dish"
             class="object-cover rounded-[20px] absolute right-125 top-43 w-[45px] h-[45px]"
+            data-aos="fade-down"
+            data-aos-delay="1000"
           />
         </div>
       </div>
     </section>
+
     <!--  Mentor section -->
-    <section class="pt-5">
+    <section id="team" class="pt-5">
       <!-- Title + Ruler -->
-      <div class="flex flex-col items-center my-12">
+      <div class="flex flex-col items-center my-12" data-aos="fade-down">
         <h2
           class="text-[64px] font-bold text-center text-primary dark:text-dark-primary font-primary pb-5"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
           Mentor
         </h2>
 
         <!-- Ruler -->
-        <div class="mt-4 w-[430px] h-[2px] bg-gray-400"></div>
+        <div
+          class="mt-4 w-[430px] h-[2px] bg-gray-400"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        ></div>
       </div>
 
       <!-- Content -->
       <div class="container px-8 mx-auto">
         <div
           class="bg-[#FFCC00] rounded-[36px] flex items-center px-3 h-[320px] relative"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
           <!-- Image -->
-          <div class="flex-shrink-0">
+          <div class="flex-shrink-0" data-aos="zoom-in" data-aos-delay="200">
             <img
               src="/assets/mentor.png"
               alt="Mentor"
@@ -178,47 +239,60 @@
           </div>
 
           <!-- Info -->
-          <div class="ml-7 flex flex-col justify-center">
-            <h2 class="text-[64px] font-bold font-primary text-white">
-              Eung Lyzhia
-            </h2>
-
-            <p
-              class="mb-2 mt-4 text-gray-800 w-[727px] font-primary text-[24px]"
-            >
-              Enjoy unique tastes, affordable pricing, and an unforgettable
-              experience we proudly deliver to our customers.
-            </p>
-            <img
-              src="/assets/rulerabout.png"
-              alt="ruler"
-              class="absolute h-[300px] right-0 rounded-[20px] w-[400px]"
-            />
-
-            <!-- Social Icons -->
-            <div class="mt-4 flex gap-4">
-              <a
-                href="#"
-                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition"
+          <d>
+            <div class="ml-7 flex flex-col overflow-hidden justify-center">
+              <h2
+                class="text-[65px] font-bold font-primary text-white"
+                data-aos="fade-left"
+                data-aos-delay="300"
               >
-                <i class="fab fa-facebook-f"></i>
-              </a>
-
-              <a
-                href="#"
-                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition"
+                Eung Lyzhia
+              </h2>
+              <p
+                class="mb-2 mt-4 text-accent/80 w-[727px] font-primary text-[24px]"
+                data-aos="fade-left"
+                data-aos-delay="400"
               >
-                <i class="fab fa-youtube"></i>
-              </a>
-
-              <a
-                href="#"
-                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition"
-              >
-                <i class="fab fa-youtube"></i>
-              </a>
+                IT instructor at ISTAD, guiding students in web design and
+                development to build modern, responsive websites and strong
+                digital skills.
+              </p>
+              <img
+                src="/assets/rulerabout.png"
+                alt="ruler"
+                class="absolute h-[300px] -right-0 rotate-[-2deg] rounded-[20px] w-[300px]"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              />
+              <!-- Social Icons -->
+              <div class="mt-4 items-center flex gap-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition"
+                  data-aos="zoom-in"
+                  data-aos-delay="600"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition"
+                  data-aos="zoom-in"
+                  data-aos-delay="700"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition"
+                  data-aos="zoom-in"
+                  data-aos-delay="800"
+                >
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </div>
             </div>
-          </div>
+          </d>
         </div>
       </div>
     </section>
@@ -401,5 +475,14 @@
     <div id="footer"></div>
 
     <script src="../include.js"></script>
+    <!-- Aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // animation happens only once
+        duration: 800, // animation speed
+        easing: "ease-out-cubic",
+      });
+    </script>
   </body>
 </html>
