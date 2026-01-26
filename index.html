@@ -13,10 +13,11 @@
   <body class="bg-background">
     <!-- use id navbar for import navbar component -->
     <!-- don't remove id navbar -->
-    <div id="navbar"></div>
+    <div id="navbar" class="sticky top-0 z-99"></div>
     <main>
       <section class="relative min-h-[600px] h-[90vh] w-full flex items-center">
-        <div data-aos="fade" data-aos-delay="200" class="absolute inset-0 z-0">
+        <!-- Background -->
+        <div data-aos="fade" data-aos-delay="0" class="absolute inset-0 z-0">
           <img
             src="src/images/Frame 20 (3).png"
             alt="Food Bowl Background"
@@ -26,52 +27,41 @@
 
         <div class="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-6">
           <div class="max-w-xl text-white">
+            <!-- Heading -->
             <h1
               data-aos="fade-down"
-              data-aos-delay="300"
+              data-aos-delay="100"
               class="text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg"
             >
               Delicious Food <br />
               Collection!
             </h1>
 
+            <!-- Paragraph -->
             <p
               data-aos="fade-right"
-              data-aos-delay="350"
+              data-aos-delay="250"
               class="text-lg md:text-xl opacity-95 mb-10 leading-relaxed drop-shadow-md"
             >
               Discover exciting flavors, affordable prices, and a memorable
               experience we're proud to offer our customers.
             </p>
 
+            <!-- Buttons -->
             <div class="flex mt-8 flex-wrap gap-4">
               <button
-                data-aos-delay="300"
                 data-aos="fade-right"
-                class="bg-white text-yellow-500 px-8 py-3 rounded-xl font-bold shadow-xl flex items-center gap-2 hover:scale-105 transition-transform"
+                data-aos-delay="400"
+                class="bg-white text-primary px-8 py-3 rounded-xl font-semibold flex items-center gap-2 transition-transform"
               >
                 Order Food
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
               </button>
 
               <a
                 href="#menu"
-                data-aos-delay="350"
                 data-aos="fade-left"
-                class="border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white/20 transition backdrop-blur-sm"
+                data-aos-delay="550"
+                class="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white/20 transition backdrop-blur-sm"
               >
                 View Menu
               </a>
@@ -79,7 +69,8 @@
           </div>
         </div>
       </section>
-      <section id="menu" class="w-full mt-5 h-[95vh] overflow-hidden">
+
+      <section class="w-full mt-5 h-[95vh] overflow-hidden">
         <div class="w-full h-[90vh] flex items-center justify-center relative">
           <div
             class="w-full h-full max-w-screen relative rounded-tl-3xl rounded-tr-3xl"
@@ -94,7 +85,9 @@
               />
             </div>
             <!-- Right Background Image -->
-            <div class="absolute  -right-[20%] max-md:min-h-[600px] top-5 w-[43%]">
+            <div
+              class="absolute -right-[20%] max-md:min-h-[600px] top-5 w-[43%]"
+            >
               <img
                 data-aos="fade-left"
                 data-aos-delay="600"
@@ -122,6 +115,7 @@
                 For 10+ years, we’ve delivered new taste experiences right to
                 your door.
               </p>
+
               <div
                 data-aos="zoom-in"
                 data-aos-delay="1250"
@@ -229,6 +223,288 @@
           </div>
         </div>
       </section>
+      <!-- section 2 popular menu -->
+      <section id="menu" class="px-8 max-w-7xl mx-auto text-center">
+        <!-- Title -->
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="max-md:text-4xl text-[70px] font-bold text-primary mb-10"
+        >
+          Popular menu
+        </h2>
+
+        <!-- Description -->
+        <p
+          data-aos="fade-up"
+          data-aos-delay="150"
+          class="text-gray-500 mb-20 text-xl max-w-2xl mx-auto"
+        >
+          Discover our exciting flavors, affordable prices, and a memorable
+          experience we're proud to offer our customers.
+        </p>
+
+        <!-- Menu Cards -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-primary rounded-[36px] p-12 grid grid-cols-1 md:grid-cols-3 gap-12 mt-10"
+        >
+          <!-- Card 1 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="350"
+            class="flex flex-col items-center -mt-24"
+          >
+            <img
+              src="src/images/image 10 (2).png"
+              class="w-44 h-44 rounded-full mb-6 object-cover"
+            />
+            <h3 class="text-white font-bold text-xl mb-3">Fresh Power Bowl</h3>
+            <p class="text-accent text-xl px-4">
+              A vibrant and delicious mix of vegetables, fruits, and grains for
+              a healthy meal.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            class="flex flex-col items-center -mt-24"
+          >
+            <img
+              src="src/images/image 10 (1).png"
+              class="w-44 h-44 rounded-full mb-6 object-cover"
+            />
+            <h3 class="text-white font-bold text-xl mb-3">
+              Spicy Stir-Fried Noodles
+            </h3>
+            <p class="text-accent text-xl px-4">
+              Savory noodles stir-fried with vegetables and a spicy kick of
+              flavor.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="650"
+            class="flex flex-col items-center -mt-24"
+          >
+            <img
+              src="src/images/image 10.png"
+              class="w-44 h-44 rounded-full mb-6 object-cover"
+            />
+            <h3 class="text-white font-bold text-xl mb-3">
+              Green Vitality Bowl
+            </h3>
+            <p class="text-accent text-xl px-4">
+              A balanced bowl with fresh greens, nuts, and nutritious toppings.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- section3 - best offers -->
+     <section class="max-w-7xl mx-auto px-8 py-20">
+  <!-- Section Header -->
+  <div class="text-center mb-12">
+    <h2
+      data-aos="fade-up"
+      data-aos-delay="0"
+      class="max-md:text-4xl text-[70px] font-bold text-primary mb-3"
+    >
+      Best Offers For You
+    </h2>
+
+    <div
+      data-aos="fade-up"
+      data-aos-delay="100"
+      class="w-100 h-0.5 bg-gray-300 mx-auto mb-6"
+    ></div>
+
+    <p
+      data-aos="fade-up"
+      data-aos-delay="200"
+      class="text-gray-500 max-w-xl text-xl mx-auto"
+    >
+      Enjoy your favorite dishes at special prices today. Don't miss
+      today's food deals!
+    </p>
+  </div>
+
+  <!-- Offers Grid -->
+  <div
+    data-aos="fade-up"
+    data-aos-delay="300"
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 items-center place-content-center"
+  >
+    <!-- Column 1 -->
+    <div
+      data-aos="fade-right"
+      data-aos-delay="350"
+      class="flex flex-col justify-between h-full"
+    >
+      <div class="mb-6 pl-0.5">
+        <h3 class="text-[36px] font-bold text-primary leading-tight mb-4">
+          New Dishes <br />
+          For You!
+        </h3>
+        <p class="text-gray-500 text-xl">
+          Order now and get <br />
+          discount 50%
+        </p>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-md">
+        <img
+          src="src/images/image 4.png"
+          alt="New Dish"
+          class="w-full h-40 object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="500"
+    >
+      <div class="rounded-2xl flex flex-col justify-between gap-4 overflow-hidden">
+        <img
+          src="src/images/Geheimnisse der Natur - Blütenpollen ernährungs-trend 2025 1.png"
+          alt="Dishes"
+          class="w-full h-40 rounded-2xl object-cover"
+        />
+        <img
+          src="src/images/15 Easy Game Day Snack Recipe Ideas _ Mummy Time 2.png"
+          alt="Snack"
+          class="w-full rounded-2xl h-40 object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div
+      data-aos="zoom-in"
+      data-aos-delay="650"
+      class="h-full"
+    >
+      <img
+        src="src/images/Vegan Potstickers With Dipping Sauce 1.png"
+        alt="Gyoza"
+        class="w-full h-[340px] object-cover rounded-2xl shadow-md"
+      />
+    </div>
+
+    <!-- Column 4 -->
+    <div
+      data-aos="zoom-in"
+      data-aos-delay="800"
+      class="h-full"
+    >
+      <img
+        src="src/images/Lentil Bolognese 1.png"
+        alt="Pasta"
+        class="w-full h-[340px] object-cover rounded-2xl shadow-md"
+      />
+    </div>
+
+    <!-- Column 5 -->
+    <div
+      data-aos="zoom-in"
+      data-aos-delay="950"
+      class="h-full"
+    >
+      <img
+        src="src/images/Penne all’Arrabbiata — One Pot Pia 1.png"
+        alt="Penne"
+        class="w-full h-[340px] object-cover rounded-2xl shadow-md"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Section4 explore the menu -->
+
+ <section class="max-w-7xl mx-auto">
+        <div class="text-center mb-12 sm:px-6 ">
+            <h2 data-aos="fade-up"
+      data-aos-delay="0" class="max-md:text-4xl text-[70px] font-bold text-primary mb-3">Explore the menu</h2>
+      
+            <p data-aos="fade-up"
+      data-aos-delay="200" class="text-gray-500 text-xl mb-[40px] max-w-3xl mx-auto">
+                Discover a menu crafted with fresh ingredients,<br>rich flavors, and passion in every bite.
+            </p>
+            
+            <div 
+            data-aos="fade-up"
+    data-aos-delay="300"
+            class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Card 1 -->
+                <div
+                data-aos="fade-up"
+      data-aos-delay="350"
+                 class="overflow-hidden">
+                    <div class="relative">
+                        <img src="src/images/katheiw.png" alt="Kathiew Khmer Beef Noodle" class=" w-[270px] h-[270px] object-cover ">
+                    </div>
+                    <div class=" text-left">
+                        <div class="text-primary text-xl pt-2.5">★★★★★</div>
+                        <h3 class="font-bold text-[17px] pt-2.5 text-gray-800">Kathiew Khmer Beef <br> Noodle</h3>
+                        <p class="text-gray-500 pt-2.5 text-[16px] leading-relaxed">Light, comforting, and perfect for breakfast.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div 
+                data-aos="fade-up"
+      data-aos-delay="500"
+                class="overflow-hidden">
+                    <div class="relative">
+                        <img src="src/images/amok.png" alt="Steamed Fish Khmer Amok Trey" class="w-[270px] h-[270px] object-cover">
+                    </div>
+                    <div class=" text-left">
+                        <div class="text-primary text-xl pt-2.5">★★★★★</div>
+                        <h3 class="font-bold text-[17px] pt-2.5 text-gray-800">Steamed Fish <br> Khmer Amok Trey</h3>
+                        <p class="text-gray-500 pt-2.5 text-[16px] leading-relaxed">Amok Trey has a fragrant aroma <br> and a smooth.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                data-aos="zoom-in"
+      data-aos-delay="650"
+                 class=" overflow-hidden">
+                    <div class="relative">
+                        <img src="src/images/dumpling.png" alt="Easy Chicken Momo Dumplings" class="w-[270px] h-[270px] object-cover">
+                    </div>
+                    <div class=" text-left">
+                        <div class="text-primary text-xl pt-2.5">★★★★★</div>
+                        <h3 class="font-bold text-[17px] pt-2.5 text-gray-800">Easy Chicken Momo <br> Dumplings</h3>
+                        <p class="text-gray-500 pt-2.5 text-[16px] leading-relaxed">Juicy ground pork wrapped in soft dough.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div 
+                data-aos="zoom-in"
+      data-aos-delay="800"
+                class=" overflow-hidden">
+                    <div class="relative">
+                        <img src="src/images/brohokAng.png" alt="Khmer Brohok Grilled" class="w-[270px] h-[270px] object-cover">
+                    </div>
+                    <div class=" text-left">
+                        <div class="text-primary text-xl pt-2.5">★★★★★</div>
+                        <h3 class="font-bold text-[17px] pt-2.5 text-gray-800">Khmer <br> Brohok Grilled</h3>
+                        <p class="text-gray-500 pt-2.5 text-[16px] leading-relaxed">Fermented fish paste with fresh vegetables and rice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <!-- use id footer for import footer component -->

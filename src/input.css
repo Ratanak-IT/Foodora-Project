@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 * {
     font-family: "Poppins", sans-serif;
 
@@ -16,4 +16,34 @@ html {
     --color-accent: #383838;
     --color-background: #FFFDF1;
     --font-primary: 'Poppins', sans-serif;
+}
+
+@keyframes rotate-bg {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotate-img {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+.animate-rotate-bg {
+    animation: rotate-bg 1.5s ease-in-out forwards;
+    /* delay will be added via inline style or Tailwind */
+}
+
+.animate-rotate-img {
+    animation: rotate-img 1.5s ease-in-out forwards;
+    /* delay will be added via inline style or Tailwind */
 }
