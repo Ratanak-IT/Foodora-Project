@@ -82,5 +82,13 @@ const checkExist = setInterval(() => {
   }
 }, 60);
 
+  const button = document.getElementById("scroll-to-mentor");
+  const mentorSection = document.getElementById("mentor-section");
+
+  button.addEventListener("click", () => {
+    mentorSection.scrollIntoView({ behavior: "smooth" });
+  });
+
+
 
 
