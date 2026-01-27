@@ -6,7 +6,6 @@
     <title>Food Menu Landing Page</title>
 
     <link rel="stylesheet" href="../output.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -23,7 +22,7 @@
   </head>
 
   <body class="bg-white text-gray-800 antialiased">
-    <div id="navbar"></div>
+    <div id="navbar" class="sticky top-0 z-99"></div>
 
     <!-- HERO -->
     <section
@@ -31,6 +30,9 @@
     >
       <div
         class="absolute -right-24 -top-20 h-[140%] w-[56%] bg-[#FFCC00] hidden md:block origin-bottom-left skew-x-[18deg] translate-x-36 rounded-[10rem] overflow-hidden"
+      ></div>
+      <div
+        class="absolute -right-45 -top-20 h-[140%] w-[56%] bg-[#FFD074] hidden md:block origin-bottom-left skew-x-[18deg] translate-x-36"
       ></div>
 
       <div
@@ -63,13 +65,13 @@
           <img
             src="../images/sale_bf.png.png"
             alt="50% Off"
-            class="absolute -top-10 -left-10 w-24 md:w-32 z-20 animate-pulse"
+            class="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 md:-top-10 md:-left-10 w-20 sm:w-24 md:w-32 z-20 animate-pulse"
           />
 
           <img
             src="../images/sale_af.png.png"
             alt="Free Home Delivery"
-            class="absolute top-4 -right-10 w-28 md:w-36 z-10 rotate-5"
+            class="absolute top-4 -right-4 sm:-right-6 md:-right-6 lg:-right-10 w-24 sm:w-28 md:w-32 lg:w-36 z-10 rotate-5"
           />
         </div>
       </div>
@@ -139,7 +141,7 @@
 
     <!-- ABOUT -->
     <section
-      class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-12"
+      class="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10"
     >
       <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
         <h1 class="text-5xl lg:text-7xl font-bold text-[#FFCC00] leading-tight">
@@ -163,7 +165,7 @@
       <div class="lg:w-1/2 relative h-[500px] w-full max-w-[500px]">
         <div class="relative w-80 h-80 mx-auto mt-20">
           <div
-            class="absolute top-30 -right-10 -translate-y-1/2 w-2/4 h-40 bg-[#FFCC00] rounded-2xl z-10"
+            class="absolute top-30 -right-2 sm:-right-6 lg:-right-10 -translate-y-1/2 w-2/4 h-40 bg-[#FFCC00] rounded-2xl z-10"
           ></div>
 
           <div
@@ -217,13 +219,16 @@
           />
         </div>
 
-        <div class="absolute bottom-8 -left-9 w-14 h-14 z-50">
+        <div
+          class="absolute bottom-8 -left-1 sm:-left-3 md:-left-9 w-14 h-14 z-50"
+        >
           <img
             src="../images/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png (1).png"
             alt="Tomato Decoration"
             class="w-full h-full object-contain"
           />
         </div>
+
         <div class="absolute bottom-30 right-8 w-14 h-14 z-45">
           <img
             src="../images/image 21.png"
