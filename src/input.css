@@ -18,6 +18,7 @@ html {
     --font-primary: 'Poppins', sans-serif;
 }
 
+
 @keyframes rotate-bg {
     0% {
         transform: rotate(-180deg);

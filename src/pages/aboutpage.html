@@ -15,7 +15,7 @@
 
   <!-- use id navbar for import navbar component -->
   <!-- don't remove id navbar -->
-  <div id="navbar"></div>
+  <div id="navbar" class="sticky top-0 z-99"></div>
 
   <!-- About / Journey Section -->
   <section class="py-6 xs:py-8 sm:py-12 md:py-16 lg:py-20 px-3 xs:px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20"
@@ -28,16 +28,17 @@
         class="text-center lg:text-left space-y-4 xs:space-y-5 sm:space-y-8 md:space-y-10 lg:space-y-[40px] w-full lg:w-auto max-w-xl"
         data-aos="fade-right" data-aos-duration="1000">
         <h2
-          class="text-[26px]​ xs:text-3xl sm:text-5xl md:text-[5.5rem] lg:text-[70px] font-primary text-primary font-bold leading-tight md:leading-[1.2]">
-          Our Journey To <br class="hidden sm:block" />Great Taste
+          class="text-[40px] md:text-[4.3rem] lg:text-[59px] font-primary text-primary font-bold leading-tight md:leading-[1.2]">
+          Our Journey To <br />Great Taste
         </h2>
+
 
         <p class="text-[16px] xs:text-sm sm:text-xl md:text-2xl font-light font-primary mx-auto lg:mx-0 max-w-[580px]">
           At our core, we offer unique flavors, affordable prices, and an unforgettable experience we
           proudly deliver to every customer.
         </p>
 
-        <button id="scroll-to-mentor"
+        <button
           class="mt-4 bg-white px-4 xs:px-5 sm:px-8 py-2 xs:py-3 sm:py-[18px] border-2 border-primary rounded-[12px] font-primary text-primary text-xs xs:text-sm sm:text-lg md:text-[20px] font-semibold hover:bg-primary hover:text-white transition-colors">
           Our members
         </button>
@@ -45,8 +46,9 @@
 
       <!-- Image / Right side -->
       <div
-        class="relative w-full max-w-[200px] xs:max-w-[280px] sm:max-w-[400px] md:max-w-[500px] aspect-square lg:w-[500px] lg:h-[500px] mt-6 xs:mt-8 sm:mt-10 lg:mt-0"
+        class="relative w-full max-w-[90%] sm:max-w-[400px] md:max-w-[500px] aspect-square lg:w-[500px] lg:h-[500px] mt-6 xs:mt-8 sm:mt-10 lg:mt-0"
         data-aos="fade-left" data-aos-duration="1000">
+
         <!-- Background rotated -->
         <div class="bg-[#FDF1BF] w-full h-full rounded-[20px] rotate-6 sm:rotate-8 absolute inset-0"></div>
 
@@ -55,11 +57,12 @@
           class="w-full h-full object-cover rounded-[20px] absolute inset-0" />
       </div>
 
+
     </div>
   </section>
 
   <!-- Flavor in Every Bite -->
-  <section class="bg-white w-full min-h-[200px] sm:min-h-[500px] md:min-h-[300px] lg:h-[600px] py-6 " data-aos="fade-up"
+  <section data-aos="fade-up" data-aos-duration="1000" class="bg-white w-full min-h-[200px] sm:min-h-[500px] md:min-h-[300px] lg:h-[600px] py-6 " data-aos="fade-up"
     data-aos-duration="1000">
     <div
       class="container mx-auto px-3 sm:px-6 md:px-8 flex flex-col gap-4  md:gap-[100px] lg:gap-[200px] md:flex-row items-center md:items-start lg:items-center">
@@ -111,19 +114,85 @@
     </div>
   </section>
 
+  <!-- Mentor -->
+  <section class="pt-3 my-5 md:px-8 sm:px-2 max-sm:px-3">
+    <!-- Title + Ruler -->
+     <h2 class="font-bold text-center font-primary text-2xl sm:text-3xl md:text-5xl lg:text-[64px] text-primary mb-2">
+      instructor
+    </h2>
+     <div class="w-full flex justify-center mb-10">
+<div class="mt-4 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[450px] h-[2px] bg-gray-400 mx-auto"></div>
+</div>
+
+
+
+    <!-- Content -->
+    <div class="container relative mx-auto md:px-8">
+      <div
+        class="bg-[#FFCC00] overflow-hidden relative flex items-center md:gap-x-8 max-md:gap-x-4 p-2.5 rounded-[28px]">
+        <!-- Image -->
+        <div class="">
+          <img src="/assets/mentor.jpg" alt="Mentor"
+            class="rounded-[18px] w-[300px] lg:w-[350px] max-lg:w-[300px] max-md:w-[150px]" />
+        </div>
+        <!-- Info -->
+        <div class="flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-8">
+          <h2 class="text-6xl font-bold max-lg:text-4xl max-sm:text-2xl text-white">
+            Eung Lyzhia
+          </h2>
+
+          <p class="max-lg:hidden lg:block text-accent w-[85%]">
+            An IT instructor at ISTAD specializing in web development,
+            teaching modern technologies to help students build websites.
+          </p>
+          <p class="lg:hidden text-accent max-md:hidden">
+            An IT instructor at ISTAD focused on modern web development and
+            responsive websites.
+          </p>
+          <p class="md:hidden text-accent max-md:block">
+            An IT instructor at ISTAD .
+          </p>
+
+          <!-- Social Icons -->
+          <div class="flex gap-4">
+            <a href="#"
+              class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition text-xs sm:text-[16px] md:text-base">
+              <i class="fab fa-github text-[#FFD43B]"></i>
+            </a>
+            <a href="#"
+              class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition text-xs sm:text-sm md:text-base">
+              <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="#"
+              class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition text-xs sm:text-[16px] md:text-base">
+              <i class="fab fa-github text-[#FFD43B]"></i>
+            </a>
+          </div>
+        </div>
+        <img src="/assets/rulerabout.png" alt="ruler"
+  class="hidden sm:block max-lg:w-[250px] xl:w-[300px] absolute -bottom-0 right-0 max-sm:-right-7" />
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- Member section -->
   <section class="container mx-auto px-4 py-6" data-aos="fade-up" data-aos-duration="1000">
-    <h2 class="font-bold text-center font-primary text-2xl sm:text-3xl md:text-5xl lg:text-[64px] text-primary my-8">
+    <h2 class="font-bold text-center font-primary text-2xl sm:text-3xl md:text-5xl lg:text-[64px] text-primary mb-2">
       Members
     </h2>
+     <div class="w-full flex justify-center mb-10">
+<div class="mt-4 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[450px] h-[2px] bg-gray-400 mx-auto"></div>
+</div>
 
     <!-- Row 1: 3 Members -->
     <div class="flex flex-wrap justify-center gap-x-[100px] gap-y-10 mb-12" data-aos="fade-up" data-aos-stagger="100"
       data-aos-duration="800">
       <!-- Member 1 -->
       <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/ratanak.jpg" alt="Thai Ratanak" class="w-[200px] h-[200px] rounded-full object-cover" />
+        <img src="/assets/ratanak2.jpg" alt="Thai Ratanak" class="w-[200px] h-[200px] rounded-full object-cover" />
         <h3 class="text-lg font-semibold">Thai Ratanak</h3>
         <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Coder</span>
         <div class="flex gap-3 mt-2 text-2xl">
@@ -135,7 +204,7 @@
 
       <!-- Member 2 -->
       <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/member2.png" alt="Ngov kimsouheng" class="w-[200px] h-[200px] rounded-full object-cover" />
+        <img src="/assets/souheng.PNG" alt="Ngov kimsouheng" class="w-[200px] h-[200px] rounded-full object-cover object-top" />
         <h3 class="text-lg font-semibold">Ngov kimsouheng</h3>
         <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">UI Designer / Coder</span>
         <div class="flex gap-3 mt-2 text-2xl">
@@ -147,9 +216,9 @@
 
       <!-- Member 3 -->
       <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/member3.png" alt="Chhay Davin" class="w-[200px] h-[200px] rounded-full object-cover" />
+        <img src="/assets/davin.jpg" alt="Chhay Davin" class="w-[200px] h-[200px] rounded-full object-cover" />
         <h3 class="text-lg font-semibold">Chhay Davin</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Mentor</span>
+        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Coder</span>
         <div class="flex gap-3 mt-2 text-2xl">
           <i class="fab fa-github text-[#FFD43B]"></i>
           <i class="fab fa-facebook text-[#FFD43B]"></i>
@@ -163,7 +232,7 @@
       data-aos-duration="800">
       <!-- Member 4 -->
       <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/chari.png" alt="Oeurn SelaChhari" class="w-[200px] h-[200px] rounded-full object-cover" />
+        <img src="/assets/chari.png" alt="Oeurn SelaChhari" class="w-[200px] h-[200px] rounded-full object-cover object-top" />
         <h3 class="text-lg font-semibold">Oeurn SelaChhari</h3>
         <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Video Editor</span>
         <div class="flex gap-3 mt-2 text-2xl">
@@ -175,9 +244,9 @@
 
       <!-- Member 5 -->
       <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/member5.png" alt="Sroeum Saren" class="w-[200px] h-[200px] rounded-full object-cover" />
+        <img src="/assets/saren.jpg" alt="Sroeum Saren" class="w-[200px] h-[200px] rounded-full object-cover" />
         <h3 class="text-lg font-semibold">Sroeum Saren</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Member</span>
+        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Slide</span>
         <div class="flex gap-3 mt-2 text-2xl">
           <i class="fab fa-github text-[#FFD43B]"></i>
           <i class="fab fa-facebook text-[#FFD43B]"></i>
@@ -187,7 +256,7 @@
 
       <!-- Member 6 -->
       <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/member6.png" alt="Phoeurn Solyta" class="w-[200px] h-[200px] rounded-full object-cover" />
+        <img src="/assets/lyta.JPG" alt="Phoeurn Solyta" class="w-[200px] h-[200px] rounded-full object-cover object-top" />
         <h3 class="text-lg font-semibold">Phoeurn Solyta</h3>
         <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Presenter</span>
         <div class="flex gap-3 mt-2 text-2xl">
@@ -199,9 +268,9 @@
 
       <!-- Member 7 -->
       <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/member7.png" alt="Eung Lyzhia" class="w-[200px] h-[200px] rounded-full object-cover" />
-        <h3 class="text-lg font-semibold">Eung Lyzhia</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Mentor</span>
+        <img src="/assets/chhorpong.jpg" alt="chhor pong" class="w-[200px] h-[200px] rounded-full object-cover" />
+        <h3 class="text-lg font-semibold">Ourn Chhorpong</h3>
+        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Slide</span>
         <div class="flex gap-3 mt-2 text-2xl">
           <i class="fab fa-github text-[#FFD43B]"></i>
           <i class="fab fa-facebook text-[#FFD43B]"></i>

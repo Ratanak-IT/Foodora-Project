@@ -1,3 +1,5 @@
+
+
 // Load Navbar
 fetch("/src/components/navbar.html")
   .then(res => res.text())
@@ -89,6 +91,17 @@ const checkExist = setInterval(() => {
     mentorSection.scrollIntoView({ behavior: "smooth" });
   });
 
+const menuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
 
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
 
-
+    // Re-trigger AOS animation
+    if (!mobileMenu.classList.contains("hidden")) {
+      mobileMenu.classList.remove("aos-animate");
+      setTimeout(() => {
+        mobileMenu.classList.add("aos-animate");
+      }, 10);
+    }
+  });
