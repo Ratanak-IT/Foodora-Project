@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/home/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/5ce14b4205.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="min-h-screen bg-background">
+    <!--  Mentor section -->
+    <section class="pt-3 xs:pt-4 sm:pt-5 px-3 xs:px-4 sm:px-6 md:px-8">
+      <!-- Title + Ruler -->
+
+      <!-- Content -->
+      <div class="container relative mx-auto md:px-8">
+        <div
+          class="bg-[#FFCC00] overflow-hidden relative flex items-center gap-x-8 rounded-lg p-2.5 md:rounded-[28px]"
+        >
+          <!-- Image -->
+          <div class="">
+            <img
+              src="image.png"
+              alt="Mentor"
+              class=" rounded-[18px]"
+            />
+          </div>
+          <!-- Info -->
+          <div class="flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-8">
+            <h2 class="text-6xl font-bold">Eung Lyzhia</h2>
+
+            <p class="">
+              An IT instructor at ISTAD specializing in web development,
+              teaching modern web technologies and core concepts to help
+              students build responsive and user-friendly websites through
+              hands-on learning.
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition text-xs sm:text-[16px] md:text-base"
+              >
+                <i class="fab fa-github text-[#FFD43B]"></i>
+              </a>
+              <a
+                href="#"
+                class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition text-xs sm:text-sm md:text-base"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+
+              <a
+                href="#"
+                class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition text-xs sm:text-[16px] md:text-base"
+              >
+                <i class="fab fa-github text-[#FFD43B]"></i>
+              </a>
+            </div>
+          </div>
+          <img
+            src="/assets/rulerabout.png"
+            alt="ruler"
+            class="w-[250px] absolute -bottom-0 right-0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- use id footer for import footer component -->
+    <!-- don't remove id footer -->
+    <div id="footer"></div>
+
+    <script src="../include.js"></script>
+    <!-- Aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // animation happens only once
+        duration: 800, // animation speed
+        easing: "ease-out-cubic",
+      });
+    </script>
+  </body>
+</html>
