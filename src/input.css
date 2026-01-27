@@ -16,6 +16,7 @@ html {
     --color-accent: #383838;
     --color-background: #FFFDF1;
     --font-primary: 'Poppins', sans-serif;
+    --color-dark-primary:#101828;
 }
 
 @keyframes rotate-bg {
