@@ -571,9 +571,6 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
-  .h-\[50\%\] {
-    height: 50%;
-  }
   .h-\[50vh\] {
     height: 50vh;
   }
@@ -1083,9 +1080,6 @@
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
-  }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -1636,6 +1630,16 @@
       font-size: 65px;
     }
   }
+  .max-md\:-mt-24 {
+    @media (width < 48rem) {
+      margin-top: calc(var(--spacing) * -24);
+    }
+  }
+  .max-md\:-mt-30 {
+    @media (width < 48rem) {
+      margin-top: calc(var(--spacing) * -30);
+    }
+  }
   .max-md\:block {
     @media (width < 48rem) {
       display: block;
@@ -1673,12 +1677,6 @@
       line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
-  .max-md\:text-xl {
-    @media (width < 48rem) {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-  }
   .max-sm\:top-\[40\%\] {
     @media (width < 40rem) {
       top: 40%;
@@ -1697,16 +1695,6 @@
   .max-sm\:hidden {
     @media (width < 40rem) {
       display: none;
-    }
-  }
-  .max-sm\:h-\[25\%\] {
-    @media (width < 40rem) {
-      height: 25%;
-    }
-  }
-  .max-sm\:h-\[50\%\] {
-    @media (width < 40rem) {
-      height: 50%;
     }
   }
   .max-sm\:w-\[90px\] {
@@ -1805,6 +1793,26 @@
       margin-top: calc(var(--spacing) * -24);
     }
   }
+  .sm\:-mt-28 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * -28);
+    }
+  }
+  .sm\:-mt-30 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * -30);
+    }
+  }
+  .sm\:-mt-32 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * -32);
+    }
+  }
+  .sm\:-mt-33 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * -33);
+    }
+  }
   .sm\:mt-8 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 8);
@@ -1853,11 +1861,6 @@
   .sm\:h-24 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 24);
-    }
-  }
-  .sm\:h-\[340px\] {
-    @media (width >= 40rem) {
-      height: 340px;
     }
   }
   .sm\:h-\[350px\] {
