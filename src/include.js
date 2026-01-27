@@ -38,3 +38,57 @@ fetch("/src/components/footer.html")
   .then(data => {
     document.getElementById("footer").innerHTML = data;
   });
+
+ function initDarkMode() {
+  // Select both buttons and icons
+  const btnDesktop = document.getElementById('dark-desktop');
+  const moonDesktop = document.getElementById('moonIconDesktop');
+  const sunDesktop  = document.getElementById('sunIconDesktop');
+
+  const btnMobile = document.getElementById('dark-mobile');
+  const moonMobile = document.getElementById('moonIconMobile');
+  const sunMobile  = document.getElementById('sunIconMobile');
+
+  // Function to apply theme
+  function setTheme(isDark) {
+    document.documentElement.classList.toggle('dark', isDark);
+    localStorage.theme = isDark ? 'dark' : 'light';
+
+    // Update icons on both buttons
+    [moonDesktop, moonMobile].forEach(el => el && (el.style.opacity = isDark ? '0' : '1'));
+    [sunDesktop, sunMobile].forEach(el => el && (el.style.opacity = isDark ? '1' : '0'));
+  }
+
+  // Initialize theme based on localStorage or system preference
+  let isDark = localStorage.theme === 'dark' ||
+               (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+  setTheme(isDark);
+
+  // Toggle function for both buttons
+  [btnDesktop, btnMobile].forEach(btn => {
+    if(btn) btn.addEventListener('click', () => {
+      isDark = !isDark;
+      setTheme(isDark);
+    });
+  });
+}
+
+// Wait for dynamically loaded buttons
+const checkExist = setInterval(() => {
+  if (document.getElementById('dark-desktop') || document.getElementById('dark-mobile')) {
+    initDarkMode();
+    clearInterval(checkExist);
+  }
+}, 60);
+
+  const button = document.getElementById("scroll-to-mentor");
+  const mentorSection = document.getElementById("mentor-section");
+
+  button.addEventListener("click", () => {
+    mentorSection.scrollIntoView({ behavior: "smooth" });
+  });
+
+
+
+
