@@ -22,9 +22,13 @@ fetch("/src/components/navbar.html")
       const normalizedRoute = new URL(route, window.location.origin).pathname;
 
       if (normalizedRoute === currentPath) {
-        link.classList.add('text-blue-500'); // Active color
-        link.classList.remove('text-primary'); // Remove default color
-      }
+  link.classList.add(
+    'border-b-2',
+    'border-yellow-500',
+    'pb-1'
+  );
+}
+
 
       // Click navigation
       link.addEventListener('click', (e) => {
