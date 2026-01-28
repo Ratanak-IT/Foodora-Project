@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
       body {
@@ -21,98 +21,193 @@
     </style>
   </head>
 
-  <body class="bg-white text-gray-800 antialiased">
-    <div id="navbar"></div>
+  <body class="bg-background dark:bg-dark-primary text-gray-800 antialiased">
+    <div id="navbar" class="sticky top-0 z-99"></div>
 
     <!-- HERO -->
-    <section class="bg-[#FFFDF2] overflow-hidden">
-      <div
-        class="max-w-7xl mx-auto px-6 py-14 flex flex-col md:flex-row items-center gap-10"
+    <section>
+      <section
+        class="bg-white dark:bg-accent overflow-hidden relative min-h-[300px] lg:h-[90vh] flex items-center"
+        data-aos="fade"
+        data-aos-delay="0"
       >
-        <!-- TEXT -->
-        <div class="w-full md:w-1/2">
-          <h1
-            class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-[#FFCC00] leading-tight mb-6"
-          >
-            Limited Time <br />
-            Special Offer
-          </h1>
-          <p class="text-gray-500 text-lg mb-8 max-w-md">
-            Enjoy fresh, flavorful meals with exclusive discounts available only
-            for a short time. Treat yourself today!
-          </p>
-          <button
-            class="bg-[#FFCC00] hover:bg-[#eab308] text-white px-10 py-3 rounded-xl font-bold text-lg shadow-lg transition hover:scale-105"
-          >
-            See Menu
-          </button>
-        </div>
+        <div
+          class="absolute sm:-right-24 sm:-top-20 sm:h-[140%] w-[56%] bg-primary md:block origin-bottom-left skew-x-[18deg] translate-x-36 rounded-[10rem] overflow-hidden"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        ></div>
 
-        <!-- IMAGE (FIXED FOR MOBILE) -->
-        <div class="w-full md:w-100 flex justify-self-auto">
-          <img
-            src="../images/Group 64.png"
-            alt="Burger"
-            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain lg:scale-110 xl:scale-125 lg:translate-x-12 xl:translate-x-20"
-          />
+        <div
+          class="absolute sm:-right-45 sm:-top-20 sm:h-[140%] w-[56%] bg-[#FFD074] md:block origin-bottom-left skew-x-[18deg] translate-x-36"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        ></div>
+
+        <div
+          class="container mx-auto px-6 py-14 max-sm:flex-col-reverse flex flex-col md:flex-row items-center max-sm:justify-center max-sm:items-center max-sm:gap-4 gap-10 relative z-10"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
+          <div
+            class="md:w-1/2 max-sm:flex max-sm:flex-col max-sm:justify-center max:sm:col"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <h1
+              class="text-4xl lg:text-7xl max-sm:text-center font-bold leading-tight mb-6 drop-shadow-xl text-primary"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              Short Term <br />
+              Special Offer
+            </h1>
+
+            <p
+              class="text-accent max-sm:text-center dark:text-white text-lg mb-10 max-w-md"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              Enjoy fresh, flavorful meals with exclusive discounts available
+              only for a short time. Treat yourself today!
+            </p>
+
+            <button
+              class="bg-primary hover:bg-[#eab308] max-sm:items-center text-white px-10 py-3 rounded-xl font-bold text-lg shadow-lg transition hover:scale-105"
+              data-aos="zoom-in"
+              data-aos-delay="350"
+            >
+              See Menu
+            </button>
+          </div>
+
+          <div
+            class="w-full md:w-1/2 flex relative"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <img
+              src="../images/sale.png"
+              alt="Burger"
+              class="w-full max-w-md md:max-w-lg lg:max-w-xl object-contain relative z-10"
+              data-aos="zoom-in"
+              data-aos-delay="250"
+            />
+
+            <img
+              src="../images/sale_bf.png.png"
+              alt="50% Off"
+              class="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 md:-top-10 md:-left-10 w-20 sm:w-24 md:w-32 z-20 animate-pulse"
+              data-aos="flip-left"
+              data-aos-delay="350"
+            />
+
+            <img
+              src="../images/sale_af.png.png"
+              alt="Free Home Delivery"
+              class="absolute top-4 -right-4 sm:-right-6 md:-right-6 lg:-right-10 w-24 sm:w-28 md:w-32 lg:w-36 z-10 rotate-5"
+              data-aos="flip-right"
+              data-aos-delay="450"
+            />
+          </div>
         </div>
-      </div>
+      </section>
     </section>
 
     <!-- DAILY FOODS -->
-    <section class="max-w-7xl mx-auto px-6 py-14 text-center">
-      <h2 class="text-4xl font-bold text-[#FFCC00] mb-6">Daily Foods</h2>
-      <p class="text-gray-500 mb-10 max-w-2xl mx-auto">
+    <section
+      class="max-w-7xl mx-auto px-6 py-10 text-center"
+      data-aos="fade-up"
+      data-aos-delay="0"
+    >
+      <h2
+        class="max-md:text-4xl text-[70px] font-bold text-primary mb-5"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
+        Daily Foods
+      </h2>
+
+      <p
+        class="text-accent dark:text-white mb-5 text-xl max-w-2xl mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         Discover a menu crafted with fresh ingredients, rich flavors, and
         passion in every bite.
       </p>
 
       <!-- GRID -->
       <div
-        class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 [grid-auto-rows:160px] sm:[grid-auto-rows:208px] md:[grid-auto-rows:256px]"
+        class="grid px-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 [grid-auto-rows:160px] sm:[grid-auto-rows:208px] md:[grid-auto-rows:256px]"
+        data-aos="fade-up"
+        data-aos-delay="250"
       >
-        <!-- Normal image -->
-        <div class="overflow-hidden rounded-xl">
+        <!-- Image 1 -->
+        <div
+          class="overflow-hidden rounded-xl"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
           <img
             src="../images/image 16 (5).png"
             class="w-full h-full object-cover hover:scale-105 transition duration-500"
           />
         </div>
 
-        <!-- Normal image -->
-        <div class="overflow-hidden rounded-xl">
+        <!-- Image 2 -->
+        <div
+          class="overflow-hidden rounded-xl"
+          data-aos="zoom-in"
+          data-aos-delay="350"
+        >
           <img
             src="../images/image 19.png"
             class="w-full h-full object-cover hover:scale-105 transition duration-500"
           />
         </div>
 
-        <!-- Special image (spans 2 rows md+) -->
-        <div class="overflow-hidden rounded-xl md:row-span-2">
+        <!-- Image 3 (tall) -->
+        <div
+          class="overflow-hidden rounded-xl md:row-span-2"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
           <img
             src="../images/image 16 (4).png"
             class="w-full h-full object-cover hover:scale-105 transition duration-500"
           />
         </div>
 
-        <!-- Normal image -->
-        <div class="overflow-hidden rounded-xl">
+        <!-- Image 4 -->
+        <div
+          class="overflow-hidden rounded-xl"
+          data-aos="zoom-in"
+          data-aos-delay="450"
+        >
           <img
             src="../images/image 16 (6).png"
             class="w-full h-full object-cover hover:scale-105 transition duration-500"
           />
         </div>
 
-        <!-- Wide image -->
-        <div class="overflow-hidden rounded-xl lg:col-span-2">
+        <!-- Image 5 (wide) -->
+        <div
+          class="overflow-hidden rounded-xl lg:col-span-2"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <img
             src="../images/image 18.png"
             class="w-full h-full object-cover hover:scale-105 transition duration-500"
           />
         </div>
 
-        <!-- Normal image -->
-        <div class="overflow-hidden rounded-xl">
+        <!-- Image 6 -->
+        <div
+          class="overflow-hidden rounded-xl"
+          data-aos="zoom-in"
+          data-aos-delay="550"
+        >
           <img
             src="../images/image 20.png"
             class="w-full h-full object-cover hover:scale-105 transition duration-500"
@@ -123,35 +218,63 @@
 
     <!-- ABOUT -->
     <section
-      class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-12"
+      class="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10"
+      data-aos="fade-up"
+      data-aos-delay="0"
     >
-      <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
-        <h1 class="text-5xl lg:text-7xl font-bold text-[#FFCC00] leading-tight">
+      <div
+        class="lg:w-1/2 space-y-6 text-center lg:text-left"
+        data-aos="fade-right"
+        data-aos-delay="120"
+      >
+        <h1
+          class="md:text-5xl lg:text-7xl font-bold text-primary leading-tight"
+          data-aos="fade-down"
+          data-aos-delay="180"
+        >
           Where Great <br />
           Taste Begins
         </h1>
-        <p class="text-gray-600 text-lg max-w-md mx-auto lg:mx-0">
+
+        <p
+          class="text-accent dark:text-white text-lg max-w-md mx-auto lg:mx-0"
+          data-aos="fade-up"
+          data-aos-delay="240"
+        >
           Enjoy unique tastes, affordable pricing, and an unforgettable
           experience we proudly deliver to our customers.
         </p>
-        <div>
+
+        <div data-aos="zoom-in" data-aos-delay="300">
           <a
             href="#"
-            class="inline-block px-8 py-3 border-2 border-[#FFCC00] text-[#FFCC00] font-bold rounded-xl hover:bg-[#FFCC00] hover:text-white transition-all"
+            class="inline-block px-8 py-3 border-2 border-[#FFCC00] text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all"
           >
             History
           </a>
         </div>
       </div>
 
-      <div class="lg:w-1/2 relative h-[500px] w-full max-w-[500px]">
-        <div class="relative w-80 h-80 mx-auto mt-20">
+      <div
+        class="lg:w-1/2 relative h-[500px] w-full max-w-[500px]"
+        data-aos="fade-left"
+        data-aos-delay="180"
+      >
+        <div
+          class="relative w-80 h-80 mx-auto mt-20"
+          data-aos="zoom-in"
+          data-aos-delay="220"
+        >
           <div
-            class="absolute top-30 -right-10 -translate-y-1/2 w-2/4 h-40 bg-[#FFCC00] rounded-2xl z-10"
+            class="absolute top-30 -right-2 sm:-right-6 lg:-right-10 -translate-y-1/2 w-2/4 h-40 bg-primary rounded-2xl z-10"
+            data-aos="fade-left"
+            data-aos-delay="260"
           ></div>
 
           <div
             class="absolute inset-0 m-auto w-65 h-65 md:w-80 md:h-80 z-20 rounded-2xl overflow-hidden"
+            data-aos="zoom-in"
+            data-aos-delay="300"
           >
             <img
               src="../images/Overlay+Shadow (2).png"
@@ -160,9 +283,12 @@
             />
           </div>
         </div>
-        <!-- 1 -->
+
+        <!-- Floating items -->
         <div
           class="absolute top-20 right-6 w-22 h-22 z-22 rounded-xl overflow-hidden"
+          data-aos="fade-down"
+          data-aos-delay="340"
         >
           <img
             src="../images/Overlay+Shadow (1).png"
@@ -173,6 +299,8 @@
 
         <div
           class="absolute bottom-10 left-4 w-24 h-24 z-30 rounded-xl overflow-hidden"
+          data-aos="fade-up"
+          data-aos-delay="380"
         >
           <img
             src="../images/Overlay+Shadow.png"
@@ -182,7 +310,9 @@
         </div>
 
         <div
-          class="absolute top-50 left-10 w-14 h-14 bg-[#FFCC00] rounded-2xl z-10 shadow-sm"
+          class="absolute top-50 left-10 w-14 h-14 bg-primary rounded-2xl z-10 shadow-sm"
+          data-aos="zoom-in"
+          data-aos-delay="420"
         >
           <img
             src="../images/Frame.png"
@@ -193,6 +323,8 @@
 
         <div
           class="absolute bottom-5 right-8 w-20 h-20 z-10 rounded-xl overflow-hidden"
+          data-aos="fade-left"
+          data-aos-delay="460"
         >
           <img
             src="../images/ភ្ញៀវទេសចរ.png"
@@ -201,14 +333,23 @@
           />
         </div>
 
-        <div class="absolute bottom-8 -left-9 w-14 h-14 z-50">
+        <div
+          class="absolute bottom-8 -left-1 sm:-left-3 md:-left-9 w-14 h-14 z-50"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <img
             src="../images/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png (1).png"
             alt="Tomato Decoration"
             class="w-full h-full object-contain"
           />
         </div>
-        <div class="absolute bottom-30 right-8 w-14 h-14 z-45">
+
+        <div
+          class="absolute bottom-30 right-8 w-14 h-14 z-45"
+          data-aos="fade-up"
+          data-aos-delay="540"
+        >
           <img
             src="../images/image 21.png"
             alt="Tomato Decoration"
@@ -220,5 +361,14 @@
 
     <div id="footer"></div>
     <script src="../include.js"></script>
+    <!-- Aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // animation happens only once
+        duration: 800, // animation speed
+        easing: "ease-out-cubic",
+      });
+    </script>
   </body>
 </html>

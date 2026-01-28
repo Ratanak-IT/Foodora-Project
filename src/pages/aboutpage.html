@@ -1,322 +1,475 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/home/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/5ce14b4205.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="shortcut icon" href="./img/home/icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="../output.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://kit.fontawesome.com/5ce14b4205.js" crossorigin="anonymous"></script>
-</head>
+  <body class="min-h-screen bg-background dark:bg-dark-primary">
+    <!-- use id navbar for import navbar component -->
+    <!-- don't remove id navbar -->
+    <div id="navbar" class="sticky top-0 z-99"></div>
 
-<body class="min-h-screen bg-background">
-
-  <!-- use id navbar for import navbar component -->
-  <!-- don't remove id navbar -->
-  <div id="navbar" class="sticky top-0 z-99"></div>
-
-  <!-- About / Journey Section -->
-  <section class="py-6 xs:py-8 sm:py-12 md:py-16 lg:py-20 px-3 xs:px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20"
-    data-aos="fade-up" data-aos-duration="1000">
-    <div
-      class="mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-4 xs:gap-6 sm:gap-8 md:gap-10 lg:gap-16 xl:gap-[200px]">
-
-      <!-- Text Content -->
+    <!-- About / Journey Section -->
+    <section
+      class="py-6 sm:py-12 md:py-16 lg:py-20 px-3 xs:px-4 sm:px-8 md:px-12 l"
+    >
       <div
-        class="text-center lg:text-left space-y-4 xs:space-y-5 sm:space-y-8 md:space-y-10 lg:space-y-[40px] w-full lg:w-auto max-w-xl"
-        data-aos="fade-right" data-aos-duration="1000">
-        <h2
-          class="text-[40px] md:text-[4.3rem] lg:text-[59px] font-primary text-primary font-bold leading-tight md:leading-[1.2]">
-          Our Journey To <br />Great Taste
-        </h2>
-
-
-        <p class="text-[16px] xs:text-sm sm:text-xl md:text-2xl font-light font-primary mx-auto lg:mx-0 max-w-[580px]">
-          At our core, we offer unique flavors, affordable prices, and an unforgettable experience we
-          proudly deliver to every customer.
-        </p>
-
-        <button
-          class="mt-4 bg-white px-4 xs:px-5 sm:px-8 py-2 xs:py-3 sm:py-[18px] border-2 border-primary rounded-[12px] font-primary text-primary text-xs xs:text-sm sm:text-lg md:text-[20px] font-semibold hover:bg-primary hover:text-white transition-colors">
-          Our members
-        </button>
-      </div>
-
-      <!-- Image / Right side -->
-      <div
-        class="relative w-full max-w-[90%] sm:max-w-[400px] md:max-w-[500px] aspect-square lg:w-[500px] lg:h-[500px] mt-6 xs:mt-8 sm:mt-10 lg:mt-0"
-        data-aos="fade-left" data-aos-duration="1000">
-
-        <!-- Background rotated -->
-        <div class="bg-[#FDF1BF] w-full h-full rounded-[20px] rotate-6 sm:rotate-8 absolute inset-0"></div>
-
-        <!-- Image NOT rotated -->
-        <img src="/assets/heroabout.png" alt="Delicious beef dish with herbs, chili, cashews and sauce"
-          class="w-full h-full object-cover rounded-[20px] absolute inset-0" />
-      </div>
-
-
-    </div>
-  </section>
-
-  <!-- Flavor in Every Bite -->
-  <section data-aos="fade-up" data-aos-duration="1000" class="bg-white w-full min-h-[200px] sm:min-h-[500px] md:min-h-[300px] lg:h-[600px] py-6 " data-aos="fade-up"
-    data-aos-duration="1000">
-    <div
-      class="container mx-auto px-3 sm:px-6 md:px-8 flex flex-col gap-4  md:gap-[100px] lg:gap-[200px] md:flex-row items-center md:items-start lg:items-center">
-
-      <!-- Text Content -->
-      <div
-        class="text-center md:text-left space-y-3 xs:space-y-4 sm:space-y-8 md:space-y-[40px] relative w-full md:w-auto">
-        <h2
-          class="text-[26px] xs:text-3xl sm:text-4xl md:text-5xl lg:text-[70px] font-primary text-primary font-bold leading-[1.2] mt-4 xs:mt-5 sm:mt-8 md:mt-10">
-          Flavor in <br />Every Bite
-        </h2>
-
-        <img src="/assets/Vector8.png" alt="Delicious beef dish"
-          class="object-contain rounded-[20px] absolute right-[-160px] top-8 w-[205px] h-[130px] md:w-[160px] md:h-[110px] hidden md:block md:right-[-200px] md:top-[60px]" />
-
-        <p
-          class="text-[16px] xs:text-sm sm:text-base md:text-lg lg:text-[24px] font-light font-primary w-full md:max-w-[504px]">
-          Our passion lies in crafting flavorful food, offering reasonable prices, and delivering a dining experience
-          guests will remember.
-        </p>
-      </div>
-      <!-- Image Side -->
-      <div
-        class="relative w-full max-w-[200px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[575px] h-[200px] md:h-[400px] lg:h-[515px] block md:block">
-        <img src="/assets/fruitoriginal.png" alt="Delicious beef dish"
-          class="object-cover rounded-[20px] absolute right-0 top-8 sm:top-0  md:top-12 lg:top-10 max-sm:w-[100px] max-md:w-[200px]  max-md:w-[200px] md:w-40 lg:w-[290px]  md:h-40 lg:h-[300px]" />
-        <img src="/assets/fooderub.png" alt="Delicious beef dish"
-          class="object-cover rounded-[20px] absolute left-0 sm:right-20 md:right-45 min-md:left-10 max-sm:w-[90px] lg:right-80 bottom-5 sm:bottom-4 md:bottom-23 lg:bottom-3 lg:left-5 w-30 sm:w-24 md:w-32 lg:w-[235px] md:w-[140px] md:h-[140px] h-20 sm:h-24 md:h-32 lg:h-[235px]" />
-
-        <img src="/assets/foodegg.png" alt="Delicious beef dish"
-          class="object-cover rounded-[20px] absolute md:left-35 max-sm:left-15 max-sm:top-14 min-md:left-28 max-md:-right-0  lg:right-80  md:top-25 lg:top-30 w-8  md:w-16 lg:w-[113px]  md:h-16 lg:h-[113px]" />
-        <img src="/assets/treelef.png" alt="Delicious beef dish"
-          class="object-cover rounded-[20px] absolute right-15 max-sm:left-18 md:right-43 lg:right-80 top-6 sm:top-10 md:top-12 lg:top-10 w-4 xs:w-5 sm:w-6 md:w-5 lg:w-[34px] h-4 xs:h-5 sm:h-6 md:h-5 lg:h-[40px]" />
-        <img src="/assets/Frame.png" alt="Delicious beef dish"
-          class="object-cover rounded-[20px] absolute right-8 max-sm:right-18 md:right-30 lg:right-55 bottom-5 sm:bottom-4 md:bottom-27 lg:bottom-18 w-8 sm:w-12 md:w-11 md:h-9 lg:w-[70px] h-8  sm:h-12  lg:h-[70px]" />
-        <img src="/assets/sberry.png" alt="Delicious beef dish"
-          class="object-cover absolute right-5 max-sm:right-9 md:right-17 lg:right-35 bottom-2 max-sm:bottom-6 md:bottom-25 lg:bottom-18 w-8 sm:w-12 md:w-14 lg:w-[75px] h-8 min-md:w-13 min-md:h-13 sm:h-12 md:h-14 lg:h-[75px]" />
-        <img src="/assets/Pepper.png" alt="Delicious beef dish"
-          class="object-cover rounded-[20px] absolute right-0 bottom-3 max-sm:bottom-8 md:bottom-30 lg:bottom-20 w-8 xs:w-10 sm:w-12 md:w-14 lg:w-[70px] h-8 xs:h-10 sm:h-12 md:h-14 lg:h-[70px]" />
-        <div class="relative overflow-visible">
-          <img src="/assets/Lemon.png" alt="Delicious beef dish"
-            class="absolute right-5  max-sm:right-2 md:right-2 lg:right-[25px]  max-sm:top-42 md:-bottom-85 lg:-bottom-[535px] w-12 max-sm:w-8 md:w-15 lg:w-[100px] h-12 max-sm:h-8 md:h-15 lg:h-[100px]" />
-        </div>
-        <img src="/assets/onion.png" alt="Delicious beef dish"
-          class="object-cover rounded-[20px] absolute  md:left-2 lg:right-120 top-0  md:top-7 w-14  md:w-13 lg:w-[140px] h-14  md:h-12 lg:h-[140px]" />
-        <img src="/assets/redpepper.png" alt="Delicious beef dish"
-          class="object-cover rounded-[20px] absolute left-5 min-md:left-10 md:right-62 lg:right-125 top-18 sm:top-10 md:top-32 lg:top-43 w-4 sm:w-6 md:w-7 lg:w-[45px] h-4 sm:h-6 md:h-7 lg:h-[45px]" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Mentor -->
-  <section class="pt-3 my-5 md:px-8 sm:px-2 max-sm:px-3">
-    <!-- Title + Ruler -->
-     <h2 class="font-bold text-center font-primary text-2xl sm:text-3xl md:text-5xl lg:text-[64px] text-primary mb-2">
-      instructor
-    </h2>
-     <div class="w-full flex justify-center mb-10">
-<div class="mt-4 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[450px] h-[2px] bg-gray-400 mx-auto"></div>
-</div>
-
-
-
-    <!-- Content -->
-    <div class="container relative mx-auto md:px-8">
-      <div
-        class="bg-[#FFCC00] overflow-hidden relative flex items-center md:gap-x-8 max-md:gap-x-4 p-2.5 rounded-[28px]">
-        <!-- Image -->
-        <div class="">
-          <img src="/assets/mentor.jpg" alt="Mentor"
-            class="rounded-[18px] w-[300px] lg:w-[350px] max-lg:w-[300px] max-md:w-[150px]" />
-        </div>
-        <!-- Info -->
-        <div class="flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-8">
-          <h2 class="text-6xl font-bold max-lg:text-4xl max-sm:text-2xl text-white">
-            Eung Lyzhia
+        class="mx-auto container flex flex-col items-center max-lg:gap-10 lg:gap-[110px] justify-center lg:flex-row"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <!-- Text Content -->
+        <div
+          class="text-center lg:text-left space-y-4 xs:space-y-5 sm:space-y-8 md:space-y-10 lg:space-y-[40px] w-full lg:w-auto max-w-xl"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <h2
+            class="text-[40px] md:text-[4.3rem] lg:text-[59px] font-primary text-primary font-bold leading-tight md:leading-[1.2]"
+            data-aos="fade-down"
+            data-aos-delay="300"
+          >
+            Our Journey To <br />Great Taste
           </h2>
 
-          <p class="max-lg:hidden lg:block text-accent w-[85%]">
-            An IT instructor at ISTAD specializing in web development,
-            teaching modern technologies to help students build websites.
-          </p>
-          <p class="lg:hidden text-accent max-md:hidden">
-            An IT instructor at ISTAD focused on modern web development and
-            responsive websites.
-          </p>
-          <p class="md:hidden text-accent max-md:block">
-            An IT instructor at ISTAD .
+          <p
+            class="text-accent dark:text-white text-xl max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            At our core, we offer unique flavors, affordable prices, and an
+            unforgettable experience we proudly deliver to every customer.
           </p>
 
-          <!-- Social Icons -->
-          <div class="flex gap-4">
-            <a href="#"
-              class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition text-xs sm:text-[16px] md:text-base">
-              <i class="fab fa-github text-[#FFD43B]"></i>
-            </a>
-            <a href="#"
-              class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition text-xs sm:text-sm md:text-base">
-              <i class="fab fa-youtube"></i>
-            </a>
+          <a
+            href="#"
+            class="inline-block px-8 py-3 border-2 border-[#FFCC00] text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            Our member
+          </a>
+        </div>
 
-            <a href="#"
-              class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center text-[#FFCC00] hover:bg-gray-200 transition text-xs sm:text-[16px] md:text-base">
-              <i class="fab fa-github text-[#FFD43B]"></i>
-            </a>
+        <!-- Image / Right side -->
+        <div
+          class="relative w-full max-w-[90%] sm:max-w-[400px] md:max-w-[500px] aspect-square lg:w-[500px] lg:h-[500px] mt-6 xs:mt-8 sm:mt-10 lg:mt-0"
+        >
+          <!-- Background rotated -->
+          <div
+            class="bg-[#FDF1BF] w-full h-full rounded-[20px] rotate-6 sm:rotate-8 absolute inset-0"
+            data-aos="fade-down"
+            data-aos-delay="700"
+          ></div>
+
+          <!-- Image NOT rotated -->
+          <img
+            src="/assets/heroabout.png"
+            alt="Delicious beef dish with herbs, chili, cashews and sauce"
+            class="w-full h-full object-cover rounded-[20px] absolute inset-0"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Flavor in Every Bite -->
+    <section class="bg-white dark:bg-accent/70 w-full min-h-[200px] md:min-h-[300px] lg:py-6">
+      <div
+        class="container mx-auto px-3 sm:px-6 md:px-8 flex flex-col gap-4 md:gap-[100px] lg:gap-[200px] md:flex-row items-center md:items-start lg:items-center"
+      >
+        <!-- Text Content -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="text-center md:text-left space-y-3 xs:space-y-4 sm:space-y-8 md:space-y-[40px] relative w-full md:w-auto"
+        >
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="text-[26px] sm:text-4xl md:text-4xl lg:text-[70px] font-primary text-primary font-bold leading-[1.2] mt-4 xs:mt-5 sm:mt-8 md:mt-10"
+          >
+            Flavor in <br />Every Bite
+          </h2>
+
+          <img
+            data-aos="fade-in"
+            data-aos-delay="200"
+            src="/assets/Vector8.png"
+            alt="Delicious beef dish"
+            class="object-contain max-lg:w-[150px] max-lg:left-[80%] max-lg:rotate-45 rounded-[20px] absolute right-[-160px] top-8 w-[205px] h-[130px] hidden md:block md:right-[-200px] md:top-[60px]"
+          />
+
+          <p
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="text-[16px] text-accent dark:text-white max-lg:hidden xs:text-sm sm:text-base md:text-lg lg:text-[24px] font-light font-primary w-full md:max-w-[504px]"
+          >
+            Our passion lies in crafting flavorful food, offering reasonable
+            prices, and delivering a dining experience guests will remember.
+          </p>
+
+          <p
+            data-aos="fade-up"
+            data-aos-delay="400"
+            class="lg:hidden text-accent dark:text-white max-md:hidden"
+          >
+            Our passion lies in crafting flavorful food, offering reasonable
+            prices
+          </p>
+        </div>
+
+        <!-- Image Side -->
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="0"
+          class="relative w-full max-w-[200px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[575px] h-[200px] md:h-[400px] lg:h-[515px] block md:block"
+        >
+          <img
+            data-aos="fade-right"
+            data-aos-delay="100"
+            src="/assets/fruitoriginal.png"
+            alt="Delicious beef dish"
+            class="object-cover rounded-[20px] absolute right-0 top-8 sm:top-0 md:top-12 lg:top-10 max-sm:w-[100px] max-md:w-[200px] max-md:w-[200px] md:w-40 lg:w-[290px] md:h-40 lg:h-[300px]"
+          />
+
+          <img
+            data-aos="fade-left"
+            data-aos-delay="160"
+            src="/assets/fooderub.png"
+            alt="Delicious beef dish"
+            class="object-cover rounded-[20px] absolute left-0 sm:right-20 md:right-45 min-md:left-10 max-sm:w-[90px] lg:right-80 bottom-5 sm:bottom-4 md:bottom-23 lg:bottom-3 lg:left-5 w-30 sm:w-24 md:w-32 lg:w-[235px] md:w-[140px] md:h-[140px] h-20 sm:h-24 md:h-32 lg:h-[235px]"
+          />
+
+          <img
+            data-aos="zoom-in"
+            data-aos-delay="220"
+            src="/assets/foodegg.png"
+            alt="Delicious beef dish"
+            class="object-cover rounded-[20px] absolute md:left-35 max-sm:left-15 max-sm:top-14 min-md:left-28 max-md:-right-0 lg:right-80 md:top-25 lg:top-30 w-8 md:w-16 lg:w-[113px] md:h-16 lg:h-[113px]"
+          />
+
+          <img
+            data-aos="fade-up"
+            data-aos-delay="280"
+            src="/assets/treelef.png"
+            alt="Delicious beef dish"
+            class="object-cover rounded-[20px] absolute right-15 max-sm:left-18 md:right-43 lg:right-80 top-6 sm:top-10 md:top-12 lg:top-10 w-4 xs:w-5 sm:w-6 md:w-5 lg:w-[34px] h-4 xs:h-5 sm:h-6 md:h-5 lg:h-[40px]"
+          />
+
+          <img
+            data-aos="fade-up"
+            data-aos-delay="330"
+            src="/assets/Frame.png"
+            alt="Delicious beef dish"
+            class="object-cover rounded-[20px] absolute right-8 max-sm:right-18 md:right-30 lg:right-55 bottom-5 sm:bottom-4 md:bottom-27 lg:bottom-18 w-8 sm:w-12 md:w-11 md:h-9 lg:w-[70px] h-8 sm:h-12 lg:h-[70px]"
+          />
+
+          <img
+            data-aos="fade-up"
+            data-aos-delay="380"
+            src="/assets/sberry.png"
+            alt="Delicious beef dish"
+            class="object-cover absolute right-5 max-sm:right-9 md:right-17 lg:right-35 bottom-2 max-sm:bottom-6 md:bottom-25 lg:bottom-18 w-8 sm:w-12 md:w-14 lg:w-[75px] h-8 min-md:w-13 min-md:h-13 sm:h-12 md:h-14 lg:h-[75px]"
+          />
+
+          <img
+            data-aos="fade-up"
+            data-aos-delay="430"
+            src="/assets/Pepper.png"
+            alt="Delicious beef dish"
+            class="object-cover rounded-[20px] absolute right-0 bottom-3 max-sm:bottom-8 md:bottom-30 lg:bottom-20 w-8 xs:w-10 sm:w-12 md:w-14 lg:w-[70px] h-8 xs:h-10 sm:h-12 md:h-14 lg:h-[70px]"
+          />
+
+          <div class="relative overflow-visible">
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="480"
+              src="/assets/Lemon.png"
+              alt="Delicious beef dish"
+              class="absolute right-5 max-sm:right-2 md:right-2 lg:right-[25px] max-sm:top-42 md:-bottom-85 lg:-bottom-[535px] w-12 max-sm:w-8 md:w-15 lg:w-[100px] h-12 max-sm:h-8 md:h-15 lg:h-[100px]"
+            />
           </div>
-        </div>
-        <img src="/assets/rulerabout.png" alt="ruler"
-  class="hidden sm:block max-lg:w-[250px] xl:w-[300px] absolute -bottom-0 right-0 max-sm:-right-7" />
 
-      </div>
-    </div>
-  </section>
+          <img
+            data-aos="fade-left"
+            data-aos-delay="540"
+            src="/assets/onion.png"
+            alt="Delicious beef dish"
+            class="object-coverrounded-[20px] absolute md:left-2 lg:right-120 top-0 md:top-7 w-14 md:w-13 lg:w-[140px] h-14 md:h-12 lg:h-[140px]"
+          />
 
-
-  <!-- Member section -->
-  <section class="container mx-auto px-4 py-6" data-aos="fade-up" data-aos-duration="1000">
-    <h2 class="font-bold text-center font-primary text-2xl sm:text-3xl md:text-5xl lg:text-[64px] text-primary mb-2">
-      Members
-    </h2>
-     <div class="w-full flex justify-center mb-10">
-<div class="mt-4 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[450px] h-[2px] bg-gray-400 mx-auto"></div>
-</div>
-
-    <!-- Row 1: 3 Members -->
-    <div class="flex flex-wrap justify-center gap-x-[100px] gap-y-10 mb-12" data-aos="fade-up" data-aos-stagger="100"
-      data-aos-duration="800">
-      <!-- Member 1 -->
-      <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/ratanak2.jpg" alt="Thai Ratanak" class="w-[200px] h-[200px] rounded-full object-cover" />
-        <h3 class="text-lg font-semibold">Thai Ratanak</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Coder</span>
-        <div class="flex gap-3 mt-2 text-2xl">
-          <i class="fab fa-github text-[#FFD43B]"></i>
-          <i class="fab fa-facebook text-[#FFD43B]"></i>
-          <i class="fab fa-telegram text-[#FFD43B]"></i>
+          <img
+            data-aos="fade-left"
+            data-aos-delay="600"
+            src="/assets/redpepper.png"
+            alt="Delicious beef dish"
+            class="object-cover rounded-[20px] absolute left-5 min-md:left-10 md:right-62 lg:right-125 top-18 sm:top-10 md:top-32 lg:top-43 w-4 sm:w-6 md:w-7 lg:w-[45px] h-4 sm:h-6 md:h-7 lg:h-[45px]"
+          />
         </div>
       </div>
+    </section>
 
-      <!-- Member 2 -->
-      <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/souheng.PNG" alt="Ngov kimsouheng" class="w-[200px] h-[200px] rounded-full object-cover object-top" />
-        <h3 class="text-lg font-semibold">Ngov kimsouheng</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">UI Designer / Coder</span>
-        <div class="flex gap-3 mt-2 text-2xl">
-          <i class="fab fa-github text-[#FFD43B]"></i>
-          <i class="fab fa-facebook text-[#FFD43B]"></i>
-          <i class="fab fa-telegram text-[#FFD43B]"></i>
+    <!-- Mentor -->
+    <section
+      class="pt-3 my-5 md:px-8 sm:px-2 max-sm:px-3"
+      data-aos="fade-up"
+      data-aos-delay="0"
+    >
+      <!-- Title + Ruler -->
+      <h2
+        class="font-bold text-center font-primary text-2xl sm:text-3xl md:text-5xl lg:text-[64px] text-primary mb-2"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
+        Instructor
+      </h2>
+
+      <div
+        class="w-full flex justify-center mb-10"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div
+          class="mt-4 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[450px] h-[2px] bg-gray-400 mx-auto"
+        ></div>
+      </div>
+
+      <!-- Content -->
+      <div class="container relative mx-auto md:px-8">
+        <div
+          class="bg-[#FFCC00] overflow-hidden relative flex items-center md:gap-x-8 max-md:gap-x-4 p-2.5 rounded-[28px]"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <!-- Image -->
+          <div data-aos="fade-right" data-aos-delay="400">
+            <img
+              src="/assets/mentor.jpg"
+              alt="Mentor"
+              class="rounded-[18px] w-[300px] lg:w-[350px] max-lg:w-[300px] max-md:w-[150px]"
+            />
+          </div>
+
+          <!-- Info -->
+          <div class="flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-8">
+            <h2
+              class="text-6xl font-bold max-lg:text-4xl max-sm:text-2xl text-white"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
+              Eung Lyzhia
+            </h2>
+
+            <p
+              class="max-lg:hidden lg:block text-accent dark:text-white w-[85%]"
+              data-aos="fade-left"
+              data-aos-delay="600"
+            >
+              An IT instructor at ISTAD specializing in web development,
+              teaching modern technologies to help students build websites.
+            </p>
+
+            <p
+              class="lg:hidden text-accent dark:text-white max-md:hidden"
+              data-aos="fade-left"
+              data-aos-delay="600"
+            >
+              An IT instructor at ISTAD focused on modern web development and
+              responsive websites.
+            </p>
+
+            <p
+              class="md:hidden text-accent dark:text-white max-md:block"
+              data-aos="fade-left"
+              data-aos-delay="600"
+            >
+              An IT instructor at ISTAD .
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="700">
+              <a
+                class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
+              >
+                <i class="fab fa-github text-[#FFD43B]"></i>
+              </a>
+
+              <a
+                class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+
+              <a
+                class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
+              >
+                <i class="fab fa-github text-[#FFD43B]"></i>
+              </a>
+            </div>
+          </div>
+
+          <img
+            src="/assets/rulerabout.png"
+            alt="ruler"
+            class="hidden sm:block max-lg:w-[250px] xl:w-[300px] absolute -bottom-0 right-0 max-sm:-right-7"
+            data-aos="fade-left"
+            data-aos-delay="800"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Member section -->
+
+    <section class="container mx-auto px-4 py-6">
+      <!-- Title -->
+      <h2
+        class="font-bold text-center font-primary text-2xl sm:text-3xl md:text-5xl lg:text-[64px] text-primary mb-2"
+        data-aos="fade-down"
+      >
+        Members
+      </h2>
+
+      <!-- Divider -->
+      <div class="w-full flex justify-center mb-10">
+        <div
+          class="mt-4 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[450px] h-[2px] bg-gray-400 mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        ></div>
+      </div>
+
+      <!-- Row 1 -->
+      <div class="flex flex-wrap justify-center gap-x-[100px] gap-y-10 mb-12">
+        <!-- Member 1 -->
+        <div
+          class="flex flex-col items-center gap-4 text-center w-[200px]"
+          data-aos="fade-up"
+          data-aos-delay="0"
+        >
+          <img
+            src="/assets/ratanak2.jpg"
+            class="w-[200px] h-[200px] rounded-full object-cover"
+          />
+          <h3 class="text-lg text-accent dark:text-white font-semibold">
+            Thai Ratanak
+          </h3>
+          <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Coder</span>
+        </div>
+
+        <!-- Member 2 -->
+        <div
+          class="flex flex-col items-center gap-4 text-center w-[200px]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <img
+            src="/assets/souheng.PNG"
+            class="w-[200px] h-[200px] rounded-full object-cover object-top"
+          />
+          <h3 class="text-lg text-accent dark:text-white font-semibold">
+            Ngov kimsouheng
+          </h3>
+          <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">
+            UI Designer / Coder
+          </span>
+        </div>
+
+        <!-- Member 3 -->
+        <div
+          class="flex flex-col items-center gap-4 text-center w-[200px]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            src="/assets/davin.jpg"
+            class="w-[200px] h-[200px] rounded-full object-cover"
+          />
+          <h3 class="text-lg text-accent dark:text-white font-semibold">
+            Chhay Davin
+          </h3>
+          <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Coder</span>
         </div>
       </div>
 
-      <!-- Member 3 -->
-      <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/davin.jpg" alt="Chhay Davin" class="w-[200px] h-[200px] rounded-full object-cover" />
-        <h3 class="text-lg font-semibold">Chhay Davin</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Coder</span>
-        <div class="flex gap-3 mt-2 text-2xl">
-          <i class="fab fa-github text-[#FFD43B]"></i>
-          <i class="fab fa-facebook text-[#FFD43B]"></i>
-          <i class="fab fa-telegram text-[#FFD43B]"></i>
+      <!-- Row 2 -->
+      <div class="flex flex-wrap justify-center gap-x-[100px] gap-y-10">
+        <div
+          class="flex flex-col items-center gap-4 text-center w-[200px]"
+          data-aos="fade-up"
+          data-aos-delay="0"
+        >
+          <img
+            src="/assets/chari.png"
+            class="w-[200px] h-[200px] rounded-full object-cover object-top"
+          />
+          <h3 class="text-lg text-accent dark:text-white font-semibold">
+            Oeurn SelaChhari
+          </h3>
+          <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">
+            Video Editor
+          </span>
+        </div>
+
+        <div
+          class="flex flex-col items-center gap-4 text-center w-[200px]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <img
+            src="/assets/saren.jpg"
+            class="w-[200px] h-[200px] rounded-full object-cover"
+          />
+          <h3 class="text-lg text-accent dark:text-white font-semibold">
+            Sroeum Saren
+          </h3>
+          <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Slide</span>
+        </div>
+
+        <div
+          class="flex flex-col items-center gap-4 text-center w-[200px]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            src="/assets/lyta.JPG"
+            class="w-[200px] h-[200px] rounded-full object-cover object-top"
+          />
+          <h3 class="text-lg text-accent dark:text-white font-semibold">
+            Phoeurn Solyta
+          </h3>
+          <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">
+            Presenter
+          </span>
+        </div>
+
+        <div
+          class="flex flex-col items-center gap-4 text-center w-[200px]"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <img
+            src="/assets/chhorpong.jpg"
+            class="w-[200px] h-[200px] rounded-full object-cover"
+          />
+          <h3 class="text-lg text-accent dark:text-white font-semibold">
+            Ourn Chhorpong
+          </h3>
+          <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Slide</span>
         </div>
       </div>
-    </div>
-
-    <!-- Row 2: 4 Members -->
-    <div class="flex flex-wrap justify-center gap-x-[100px] gap-y-10" data-aos="fade-up" data-aos-stagger="100"
-      data-aos-duration="800">
-      <!-- Member 4 -->
-      <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/chari.png" alt="Oeurn SelaChhari" class="w-[200px] h-[200px] rounded-full object-cover object-top" />
-        <h3 class="text-lg font-semibold">Oeurn SelaChhari</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Video Editor</span>
-        <div class="flex gap-3 mt-2 text-2xl">
-          <i class="fab fa-github text-[#FFD43B]"></i>
-          <i class="fab fa-facebook text-[#FFD43B]"></i>
-          <i class="fab fa-telegram text-[#FFD43B]"></i>
-        </div>
-      </div>
-
-      <!-- Member 5 -->
-      <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/saren.jpg" alt="Sroeum Saren" class="w-[200px] h-[200px] rounded-full object-cover" />
-        <h3 class="text-lg font-semibold">Sroeum Saren</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Slide</span>
-        <div class="flex gap-3 mt-2 text-2xl">
-          <i class="fab fa-github text-[#FFD43B]"></i>
-          <i class="fab fa-facebook text-[#FFD43B]"></i>
-          <i class="fab fa-telegram text-[#FFD43B]"></i>
-        </div>
-      </div>
-
-      <!-- Member 6 -->
-      <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/lyta.JPG" alt="Phoeurn Solyta" class="w-[200px] h-[200px] rounded-full object-cover object-top" />
-        <h3 class="text-lg font-semibold">Phoeurn Solyta</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Presenter</span>
-        <div class="flex gap-3 mt-2 text-2xl">
-          <i class="fab fa-github text-[#FFD43B]"></i>
-          <i class="fab fa-facebook text-[#FFD43B]"></i>
-          <i class="fab fa-telegram text-[#FFD43B]"></i>
-        </div>
-      </div>
-
-      <!-- Member 7 -->
-      <div class="flex flex-col items-center gap-4 text-center w-[200px]">
-        <img src="/assets/chhorpong.jpg" alt="chhor pong" class="w-[200px] h-[200px] rounded-full object-cover" />
-        <h3 class="text-lg font-semibold">Ourn Chhorpong</h3>
-        <span class="bg-[#FDF1BF] text-sm px-3 py-1 rounded-full">Slide</span>
-        <div class="flex gap-3 mt-2 text-2xl">
-          <i class="fab fa-github text-[#FFD43B]"></i>
-          <i class="fab fa-facebook text-[#FFD43B]"></i>
-          <i class="fab fa-telegram text-[#FFD43B]"></i>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section
-    class="bg-white my-6 xs:my-8 sm:my-12 md:my-15 h-auto xs:h-auto sm:h-auto md:h-auto lg:h-[183px] flex items-center py-6 xs:py-8 sm:py-12"
-    data-aos="fade-up" data-aos-duration="1000">
-    <div class="container mx-auto px-3 xs:px-4 sm:px-6
-                flex flex-wrap md:flex-nowrap
-                items-center text-center
-                font-primary gap-4 xs:gap-5 sm:gap-8 md:gap-10 lg:gap-[100px]">
-
-      <!-- Item 1 -->
-      <div class="flex-1 min-w-[100px] xs:min-w-[120px] sm:min-w-[150px]">
-        <h2 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-primary">500k+</h2>
-        <p class="mt-1 xs:mt-2 text-primary/70 text-xs xs:text-sm sm:text-base md:text-lg">Active customers</p>
-      </div>
-
-      <!-- Item 2 -->
-      <div class="flex-1 min-w-[100px] xs:min-w-[120px] sm:min-w-[150px]">
-        <h2 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-primary">150+</h2>
-        <p class="mt-1 xs:mt-2 text-primary/70 text-xs xs:text-sm sm:text-base md:text-lg">Cities served</p>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="flex-1 min-w-[100px] xs:min-w-[120px] sm:min-w-[150px]">
-        <h2 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-primary">12k+</h2>
-        <p class="mt-1 xs:mt-2 text-primary/70 text-xs xs:text-sm sm:text-base md:text-lg">Artisan Partner</p>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="flex-1 min-w-[100px] xs:min-w-[120px] sm:min-w-[150px]">
-        <h2 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-primary">4.9/5</h2>
-        <p class="mt-1 xs:mt-2 text-primary/70 text-xs xs:text-sm sm:text-base md:text-lg">User Rating</p>
-      </div>
-
-    </div>
-  </section>
-
-
+    </section>
 
   <!-- use id footer for import footer component -->
   <!-- don't remove id footer -->
