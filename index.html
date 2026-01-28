@@ -1,18 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- aos animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- style css -->
-    <link rel="stylesheet" href="./src/output.css" />
-    <script
-      src="https://kit.fontawesome.com/5ce14b4205.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <!-- Basic -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO -->
+  <!-- ===== Basic SEO ===== -->
+<title>Foodora</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO Meta ===== -->
+<meta name="description" content="Foodora helps you discover top restaurants, browse online menus, and order delicious food fast and easily with quick delivery service.">
+<meta name="keywords" content="food delivery, online food order, restaurant menu, fast food, Foodora">
+<meta name="author" content="Foodora">
+
+<!-- ===== Favicon ===== -->
+<link rel="icon" href="/assets/foodora.PNG" type="image/png">
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:title" content="Foodora | Order Food Online From Top Restaurants Near You">
+<meta property="og:description" content="Discover the best restaurants near you, browse online menus, and order delicious food fast and easily with Foodora delivery platform.">
+<meta property="og:image" content="/assets/metaimage.jpg">
+<meta property="og:url" content="https://foodora-one.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Foodora">
+
+<!-- ===== Twitter Card ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Foodora | Order Food Online From Top Restaurants Near You">
+<meta name="twitter:description" content="Browse restaurant menus, discover great food, and order delicious meals online fast and easily with Foodora.">
+<meta name="twitter:image" content="/assets/metaimage.jpg">
+<meta name="twitter:site" content="@Foodora">
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="./src/output.css" />
+
+  
+  <script
+    src="https://kit.fontawesome.com/5ce14b4205.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
 
   <body class="bg-background dark:bg-dark-primary">
     <!-- use id navbar for import navbar component -->
@@ -24,7 +60,7 @@
         <div data-aos="fade" data-aos-delay="0" class="absolute inset-0 z-0">
           <!-- Image -->
           <img
-            src="src/images/Frame 20 (3).png"
+            src="/assets/Frame 20 (3).png"
             alt="Food Bowl Background"
             class="w-full h-full object-cover object-right md:object-center"
           />
@@ -34,7 +70,7 @@
 
           <!-- Optional Gradient Overlay -->
           <div
-            class="absolute inset-0 bg-gradient-to-r from-black/20 via-black/20 to-transparent"
+            class="absolute inset-0 bg-gradient-to-r dark:from-black/50 to-gray-400 from-black/20 via-black/20 to-transparent"
           ></div>
         </div>
         3
@@ -63,6 +99,7 @@
 
             <!-- Buttons -->
             <div class="flex mt-8 flex-wrap gap-4">
+              <a href="/src/pages/menupage.html">
               <button
                 data-aos="fade-right"
                 data-aos-delay="400"
@@ -70,6 +107,7 @@
               >
                 Order Food
               </button>
+              </a>
 
               <a
                 href="#menu"
@@ -96,7 +134,7 @@
               <img
                 data-aos="fade-right"
                 data-aos-delay="600"
-                src="/Image/index/vector-40.svg"
+                src="/assets/vector-40.svg"
                 class="w-full h-auto object-cover"
               />
             </div>
@@ -107,7 +145,7 @@
               <img
                 data-aos="fade-left"
                 data-aos-delay="600"
-                src="/Image/index/vector-60.svg"
+                src="/assets/vector-60.svg"
                 class="w-full h-auto object-cover"
               />
               <!-- <img src="/Image/index/vector-60.svg" class="w-full h-auto" /> -->
@@ -142,7 +180,7 @@
                   <div>
                     <img
                       class="bg-gray-50 w-[50px] sm:w-[55px] md:w-[60px] rounded-xl"
-                      src="/Image/index/discount.png"
+                      src="/assets/discount.png"
                       alt="Discount"
                     />
                   </div>
@@ -163,7 +201,7 @@
                   <div>
                     <img
                       class="bg-gray-50 w-[50px] sm:w-[55px] md:w-[60px] rounded-xl"
-                      src="/Image/index/location.png"
+                      src="/assets/location.png"
                       alt="Location"
                     />
                   </div>
@@ -184,7 +222,7 @@
                   <div>
                     <img
                       class="bg-gray-50 w-[50px] sm:w-[55px] md:w-[60px] rounded-xl"
-                      src="/Image/index/time.png"
+                      src="/assets/time.png"
                       alt="Time"
                     />
                   </div>
@@ -202,38 +240,38 @@
             <img
               data-aos="zoom-in"
               data-aos-delay="750"
-              src="Image/index/MINT.png"
+              src="/assets/MINT.png"
               class="absolute ] top-[5%] left-[25%] max-lg:w-[5%] lg:w-[3%] rounded-lg"
             />
             <img
               data-aos="zoom-in"
               data-aos-delay="700"
-              src="Image/index/burger.png"
+              src="/assets/burger.png"
               class="absolute max-sm:top-[40%] max-sm:w-[90px] max-lg:w-[150px] lg:w-[200px] sm:left-[2%] md:top-[32%] rounded-lg"
             />
             <img
               data-aos="zoom-in"
               data-aos-delay="500"
-              src="Image/index/TOMATO.png"
+              src="/assets/TOMATO.png"
               class="absolute bottom-[5%] left-[20%] max-lg:w-[5%] lg:w-[3%] rounded-lg"
             />
             <img
               data-aos="zoom-in"
               data-aos-delay="800"
-              src="Image/index/TOMATO.png"
+              src="/assets/mint1.png"
               class="absolute top-[48%] right-[4%] max-lg:w-[5%] lg:w-[3%] rounded-lg"
             />
 
             <img
               data-aos="zoom-in"
               data-aos-delay="300"
-              src="Image/index/pizza.png"
+              src="/assets/pizza.png"
               class="absolute max-sm:w-[90px] max-lg:w-[185px] lg:w-[200px] max-lg:bottom-0 max-lg:right-0 lg:right-[8%] lg:bottom-[1%] rounded-lg"
             />
             <img
               data-aos="zoom-in"
               data-aos-delay="750"
-              src="Image/index/dumpling.png"
+              src="/assets/normpavv.png"
               class="absolute max-sm:w-[90px] max-lg:w-[170px] lg:w-[185px] rotate-[25deg] right-[8%] top-3 rounded-lg"
             />
           </div>
@@ -276,7 +314,7 @@
             class="flex flex-col items-center max-md:-mt24 sm:-mt-24"
           >
             <img
-              src="src/images/image 10 (2).png"
+              src="/assets/image 10 (2).png"
               class="w-44 h-44 rounded-full mb-6 object-cover"
             />
             <h3 class="text-white font-bold text-xl mb-3">Fresh Power Bowl</h3>
@@ -293,7 +331,7 @@
             class="flex flex-col items-center sm:-mt-24"
           >
             <img
-              src="src/images/image 10 (1).png"
+              src="/assets/image 10 (1).png"
               class="w-44 h-44 rounded-full mb-6 object-cover"
             />
             <h3 class="text-white font-bold text-xl mb-3">Spicy Noodles</h3>
@@ -310,7 +348,7 @@
             class="flex flex-col items-center sm:-mt-24"
           >
             <img
-              src="src/images/image 10.png"
+              src="/assets/image 10.png"
               class="w-44 h-44 rounded-full mb-6 object-cover"
             />
             <h3 class="text-white font-bold text-xl mb-3">
@@ -377,7 +415,7 @@
             </div>
             <div class="rounded-2xl overflow-hidden shadow-md">
               <img
-                src="src/images/image 4.png"
+                src="/assets/image 4.png"
                 alt="New Dish"
                 class="w-full h-40 object-cover"
               />
@@ -390,12 +428,12 @@
               class="rounded-2xl flex flex-col justify-between gap-4 overflow-hidden"
             >
               <img
-                src="src/images/Geheimnisse der Natur - Blütenpollen ernährungs-trend 2025 1.png"
+                src="/assets/Geheimnisse der Natur - Blütenpollen ernährungs-trend 2025 1.png"
                 alt="Dishes"
                 class="w-full h-40 rounded-2xl object-cover"
               />
               <img
-                src="src/images/15 Easy Game Day Snack Recipe Ideas _ Mummy Time 2.png"
+                src="/assets/15 Easy Game Day Snack Recipe Ideas _ Mummy Time 2.png"
                 alt="Snack"
                 class="w-full rounded-2xl h-40 object-cover"
               />
@@ -405,7 +443,7 @@
           <!-- Column 3 -->
           <div data-aos="zoom-in" data-aos-delay="650" class="h-full">
             <img
-              src="src/images/Vegan Potstickers With Dipping Sauce 1.png"
+              src="/assets/Vegan Potstickers With Dipping Sauce 1.png"
               alt="Gyoza"
               class="w-full h-[340px] object-cover rounded-2xl shadow-md"
             />
@@ -414,7 +452,7 @@
           <!-- Column 4 -->
           <div data-aos="zoom-in" data-aos-delay="800" class="h-full">
             <img
-              src="src/images/Lentil Bolognese 1.png"
+              src="/assets/Lentil Bolognese 1.png"
               alt="Pasta"
               class="w-full h-[340px] object-cover rounded-2xl shadow-md"
             />
@@ -427,7 +465,7 @@
             class="h-full max-sm:col-span-2"
           >
             <img
-              src="src/images/Penne all’Arrabbiata — One Pot Pia 1.png"
+              src="/assets/Penne all’Arrabbiata — One Pot Pia 1.png"
               alt="Penne"
               class="w-full h-[340px] object-cover rounded-2xl shadow-md"
             />
@@ -471,7 +509,7 @@
             >
               <div class="relative">
                 <img
-                  src="src/images/katheiw.png"
+                  src="/assets/katheiw.png"
                   alt="Kathiew Khmer Beef Noodle"
                   class="w-full h-auto object-cover rounded-lg"
                 />
@@ -499,7 +537,7 @@
             >
               <div class="relative">
                 <img
-                  src="src/images/amok.png"
+                  src="/assets/amok.png"
                   alt="Steamed Fish Khmer Amok Trey"
                   class="w-full h-auto aspect-square object-cover rounded-lg"
                 />
@@ -527,7 +565,7 @@
             >
               <div class="relative">
                 <img
-                  src="src/images/dumpling.png"
+                  src="/assets/dumpling.png"
                   alt="Easy Chicken Momo Dumplings"
                   class="w-full h-auto aspect-square object-cover rounded-lg"
                 />
@@ -555,7 +593,7 @@
             >
               <div class="relative">
                 <img
-                  src="src/images/brohokAng.png"
+                  src="/assets/brohokAng.png"
                   alt="Khmer Brohok Grilled"
                   class="w-full h-auto aspect-square object-cover rounded-lg"
                 />
